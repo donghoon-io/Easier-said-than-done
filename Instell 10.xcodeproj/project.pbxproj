@@ -15,6 +15,11 @@
 		F10B1AA3255FCD3C00DEBFE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10B1AA1255FCD3C00DEBFE2 /* LaunchScreen.storyboard */; };
 		F10B1AAC255FD75C00DEBFE2 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B1AAB255FD75C00DEBFE2 /* DataStructure.swift */; };
 		F10B1AAF255FD95800DEBFE2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B1AAE255FD95800DEBFE2 /* Data.swift */; };
+		F12CE9F4257558CF009226C0 /* Phase3_ver2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12CE9F3257558CF009226C0 /* Phase3_ver2.swift */; };
+		F145C40C2575331A009271D9 /* Phase1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145C40B2575331A009271D9 /* Phase1.swift */; };
+		F145C40F257536C6009271D9 /* Phase0.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145C40E257536C6009271D9 /* Phase0.swift */; };
+		F145C41225754461009271D9 /* Phase2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145C41125754461009271D9 /* Phase2.swift */; };
+		F145C415257550A0009271D9 /* Phase3_ver1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145C414257550A0009271D9 /* Phase3_ver1.swift */; };
 		F14C48D0255FDE37002A3468 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C48CF255FDE37002A3468 /* SceneViewController.swift */; };
 		F14C48D3255FDE43002A3468 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C48D2255FDE43002A3468 /* ChoiceViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +35,11 @@
 		F10B1AA4255FCD3C00DEBFE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F10B1AAB255FD75C00DEBFE2 /* DataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
 		F10B1AAE255FD95800DEBFE2 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F12CE9F3257558CF009226C0 /* Phase3_ver2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase3_ver2.swift; sourceTree = "<group>"; };
+		F145C40B2575331A009271D9 /* Phase1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase1.swift; sourceTree = "<group>"; };
+		F145C40E257536C6009271D9 /* Phase0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase0.swift; sourceTree = "<group>"; };
+		F145C41125754461009271D9 /* Phase2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase2.swift; sourceTree = "<group>"; };
+		F145C414257550A0009271D9 /* Phase3_ver1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase3_ver1.swift; sourceTree = "<group>"; };
 		F14C48CF255FDE37002A3468 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		F14C48D2255FDE43002A3468 /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +81,11 @@
 				F14C48D2255FDE43002A3468 /* ChoiceViewController.swift */,
 				F10B1AAB255FD75C00DEBFE2 /* DataStructure.swift */,
 				F10B1AAE255FD95800DEBFE2 /* Data.swift */,
+				F145C40B2575331A009271D9 /* Phase1.swift */,
+				F145C40E257536C6009271D9 /* Phase0.swift */,
+				F145C41125754461009271D9 /* Phase2.swift */,
+				F145C414257550A0009271D9 /* Phase3_ver1.swift */,
+				F12CE9F3257558CF009226C0 /* Phase3_ver2.swift */,
 				F10B1A9C255FCD3900DEBFE2 /* Main.storyboard */,
 				F10B1A9F255FCD3C00DEBFE2 /* Assets.xcassets */,
 				F10B1AA1255FCD3C00DEBFE2 /* LaunchScreen.storyboard */,
@@ -149,12 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F145C40F257536C6009271D9 /* Phase0.swift in Sources */,
 				F10B1A9B255FCD3900DEBFE2 /* InitialViewController.swift in Sources */,
+				F145C40C2575331A009271D9 /* Phase1.swift in Sources */,
 				F10B1AAF255FD95800DEBFE2 /* Data.swift in Sources */,
 				F10B1AAC255FD75C00DEBFE2 /* DataStructure.swift in Sources */,
 				F14C48D0255FDE37002A3468 /* SceneViewController.swift in Sources */,
 				F10B1A97255FCD3900DEBFE2 /* AppDelegate.swift in Sources */,
 				F10B1A99255FCD3900DEBFE2 /* SceneDelegate.swift in Sources */,
+				F145C415257550A0009271D9 /* Phase3_ver1.swift in Sources */,
+				F145C41225754461009271D9 /* Phase2.swift in Sources */,
+				F12CE9F4257558CF009226C0 /* Phase3_ver2.swift in Sources */,
 				F14C48D3255FDE43002A3468 /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

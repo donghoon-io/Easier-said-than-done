@@ -13,6 +13,7 @@ enum Action {
 
 class Story {
     var imageName: String?
+    var title: String?
     var id = String()
     var nextId: String?
     var text: String?
@@ -22,8 +23,9 @@ class Story {
     init () {
         
     }
-    init(imageName: String? = nil, id: String, nextId: String? = nil, text: String? = nil, action: Action, question: String? = nil, choices: [String:String]? = nil) {
+    init(imageName: String? = nil, title: String? = nil, id: String, nextId: String? = nil, text: String? = nil, action: Action, question: String? = nil, choices: [String:String]? = nil) {
         self.imageName = imageName
+        self.title = title
         self.id = id
         self.nextId = nextId
         self.text = text

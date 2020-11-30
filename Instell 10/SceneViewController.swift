@@ -8,40 +8,88 @@
 import UIKit
 
 class SceneViewController: UIViewController, SendStory {
+    
+    //2-4-3-1 -> phase3_ver1
+    //2-4-2-1 -> phase3_ver2
+    //3-1-1 -> case by bool below
+    
+    var isPhase3_ver1 = true
+    
     func sendStory(storyID: String) {
-        let element = storyList.filter({ str in
-            str.id == storyID
-        })[0]
-        currentStory = element
-        drawScreen(story: currentStory)
+        if storyID == "2-4-3-1" {
+            storyList += phase3_ver1
+        } else if storyID == "2-4-2-1" {
+            storyList += phase3_ver2
+            isPhase3_ver1 = false
+        }
+        
+        if storyID != "EXIT" {
+            let element = storyList.filter({ str in
+                str.id == storyID
+            })[0]
+            currentStory = element
+            drawScreen(story: currentStory)
+        } else {
+            self.dismiss(animated: true, completion: nil) //handle here
+        }
+    }
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var constraint1: NSLayoutConstraint!
+    @IBOutlet weak var constraint2: NSLayoutConstraint!
+    
+    func title(_ isTitle: Bool, title: String? = nil) {
+        if isTitle {
+            self.constraint1.constant = 35
+            self.constraint2.constant = 15
+            self.titleLabel.isHidden = false
+            self.titleLabel.text = title!
+            self.view.layoutIfNeeded()
+        } else {
+            self.constraint1.constant = 0
+            self.constraint2.constant = 0
+            self.titleLabel.isHidden = true
+            self.view.layoutIfNeeded()
+        }
     }
     
     
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
-    var currentStory = storyList[0]
     
-    @IBAction func nextClicked(_ sender: UIButton) {
+    //var currentStory = storyList[0]
+    var currentStory = phase2[0]
+    
+    
+    @objc func nextClicked() {
         switch currentStory.action {
         case .choice:
             return
         default:
-            let nextID = currentStory.nextId
-            let element = storyList.filter({ str in
-                str.id == nextID
-            })[0]
-            currentStory = element
-            
-            if element.action == .choice {
-                let choiceVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChoiceViewController") as! ChoiceViewController
-                choiceVC.story = currentStory
-                choiceVC.sendStory = self
-                self.present(choiceVC, animated: true, completion: nil)
+            if currentStory.nextId != "EXIT" {
+                var nextID = currentStory.nextId
+                if currentStory.nextId == "3-1-1" {
+                    nextID = (isPhase3_ver1 ? "ver1_" : "ver2_") + "3-1-1"
+                }
+                let element = storyList.filter({ str in
+                    str.id == nextID
+                })[0]
+                currentStory = element
+                
+                if element.action == .choice {
+                    let choiceVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChoiceViewController") as! ChoiceViewController
+                    choiceVC.story = currentStory
+                    choiceVC.sendStory = self
+                    self.present(choiceVC, animated: true, completion: nil)
+                } else {
+                    drawScreen(story: currentStory)
+                }
             } else {
-                drawScreen(story: currentStory)
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }
+    
     @IBAction func exitClicked(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "게임 종료하기", message: "정말로 게임을 나가시겠습니까?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "아니오", style: .default, handler: nil))
@@ -54,6 +102,10 @@ class SceneViewController: UIViewController, SendStory {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(nextClicked))
+        singleTap.numberOfTapsRequired = 1
+        descriptionTextView.addGestureRecognizer(singleTap)
+        
         mainImage.image = UIImage(named: currentStory.imageName!)
         descriptionTextView.text = currentStory.text
     }
@@ -61,6 +113,12 @@ class SceneViewController: UIViewController, SendStory {
     func drawScreen(story: Story) {
         self.mainImage.image = UIImage(named: story.imageName!)
         self.descriptionTextView.text = story.text
+        
+        if let t = story.title {
+            title(true, title: t)
+        } else {
+            title(false)
+        }
     }
 }
 
