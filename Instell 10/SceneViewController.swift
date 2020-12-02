@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyGif
 
 class SceneViewController: UIViewController, SendStory {
     
@@ -55,10 +56,11 @@ class SceneViewController: UIViewController, SendStory {
     
     
     @IBOutlet weak var mainImage: UIImageView!
+    @IBOutlet weak var gifImageView: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     
-    //var currentStory = storyList[0]
-    var currentStory = phase2[0]
+    var currentStory = storyList[0]
+    //var currentStory = phase2[0]
     
     
     @objc func nextClicked() {
@@ -102,17 +104,47 @@ class SceneViewController: UIViewController, SendStory {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.gifImageView.alpha = 0.95
+        
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(nextClicked))
         singleTap.numberOfTapsRequired = 1
         descriptionTextView.addGestureRecognizer(singleTap)
         
-        mainImage.image = UIImage(named: currentStory.imageName!)
-        descriptionTextView.text = currentStory.text
+        drawScreen(story: currentStory)
     }
     
     func drawScreen(story: Story) {
-        self.mainImage.image = UIImage(named: story.imageName!)
+        if let gif = story.gif {
+            do {
+                self.mainImage.isHidden = true
+                self.gifImageView.isHidden = false
+                let gifView = try UIImage(gifName: gif)
+                self.gifImageView.stopAnimatingGif()
+                self.gifImageView.gifImage = nil
+                self.gifImageView.setGifImage(gifView, loopCount: 1)
+                self.gifImageView.startAnimatingGif()
+            } catch {
+                print("error rendering gif")
+                self.gifImageView.isHidden = true
+                self.mainImage.isHidden = false
+                self.gifImageView.stopAnimatingGif()
+                self.gifImageView.gifImage = nil
+                self.mainImage.image = UIImage(named: story.imageName!)
+            }
+        } else {
+            self.gifImageView.isHidden = true
+            self.mainImage.isHidden = false
+            self.gifImageView.stopAnimatingGif()
+            self.gifImageView.gifImage = nil
+            self.mainImage.image = UIImage(named: story.imageName!)
+        }
         self.descriptionTextView.text = story.text
+        
+        if let navTitle = story.dday {
+            self.title = navTitle
+        } else {
+            self.title = ""
+        }
         
         if let t = story.title {
             title(true, title: t)

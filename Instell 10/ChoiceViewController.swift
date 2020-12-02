@@ -31,6 +31,7 @@ class ChoiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         self.isModalInPresentation = true
         
         self.questionLabel.text = story.question

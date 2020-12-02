@@ -13,18 +13,21 @@ enum Action {
 
 class Story {
     var imageName: String?
+    var dday: String?
     var title: String?
     var id = String()
     var nextId: String?
     var text: String?
     var action = Action.choice
     var question: String?
+    var gif: String?
     var choices: [String: String]? //dictionary that contains "name":"nextid"
     init () {
         
     }
-    init(imageName: String? = nil, title: String? = nil, id: String, nextId: String? = nil, text: String? = nil, action: Action, question: String? = nil, choices: [String:String]? = nil) {
+    init(imageName: String? = nil, dday: String? = nil, title: String? = nil, id: String, nextId: String? = nil, text: String? = nil, action: Action, question: String? = nil, choices: [String:String]? = nil, gif: String? = nil) {
         self.imageName = imageName
+        self.dday = dday
         self.title = title
         self.id = id
         self.nextId = nextId
@@ -32,6 +35,7 @@ class Story {
         self.action = action
         self.question = question
         self.choices = choices
+        self.gif = gif
     }
     func nextId(name: String? = nil) -> String { //param if it requires
         switch action {

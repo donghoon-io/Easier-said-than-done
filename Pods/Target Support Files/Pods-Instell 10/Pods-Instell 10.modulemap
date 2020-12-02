@@ -1,0 +1,6 @@
+framework module Pods_Instell_10 {
+  umbrella header "Pods-Instell 10-umbrella.h"
+
+  export *
+  module * { export * }
+}
