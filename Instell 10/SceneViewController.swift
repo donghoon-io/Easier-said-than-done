@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftyGif
+import EasyTipView
 
 class SceneViewController: UIViewController, SendStory {
     
@@ -15,6 +16,9 @@ class SceneViewController: UIViewController, SendStory {
     //3-1-1 -> case by bool below
     
     var isPhase3_ver1 = true
+    
+    var tipView: EasyTipView?
+    
     
     func sendStory(storyID: String) {
         if storyID == "2-4-3-1" {
@@ -34,6 +38,7 @@ class SceneViewController: UIViewController, SendStory {
             self.dismiss(animated: true, completion: nil) //handle here
         }
     }
+    @IBOutlet weak var descriptionView: UIView!
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var constraint1: NSLayoutConstraint!
@@ -64,6 +69,7 @@ class SceneViewController: UIViewController, SendStory {
     
     
     @objc func nextClicked() {
+        tipView?.dismiss()
         switch currentStory.action {
         case .choice:
             return
@@ -111,6 +117,18 @@ class SceneViewController: UIViewController, SendStory {
         descriptionTextView.addGestureRecognizer(singleTap)
         
         drawScreen(story: currentStory)
+        
+        
+        
+        var preferences = EasyTipView.Preferences()
+        preferences.drawing.font = UIFont.systemFont(ofSize: 14)
+        preferences.drawing.foregroundColor = UIColor.black
+        preferences.drawing.backgroundColor = UIColor.white
+        preferences.drawing.arrowPosition = EasyTipView.ArrowPosition.bottom
+        
+        EasyTipView.globalPreferences = preferences
+        tipView = EasyTipView(text: "다음으로 넘어가려면\n대화 창을 탭하세요")
+        tipView?.show(animated: true, forView: self.descriptionTextView, withinSuperview: self.view)
     }
     
     func drawScreen(story: Story) {

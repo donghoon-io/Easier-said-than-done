@@ -7,5 +7,6 @@ target 'Instell 10' do
 
   # Pods for Instell 10
   pod 'SwiftyGif'
+  pod 'EasyTipView', '~> 2.0.4'
 
 end

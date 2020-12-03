@@ -6,16 +6,19 @@
 //
 
 import UIKit
+import EasyTipView
 
 class ChoiceViewController: UIViewController {
     
     var story = Story()
+    var tipView: EasyTipView?
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
     
     
     @IBAction func choose(_ sender: UIButton) {
+        tipView?.dismiss()
         if let possibleChoices = story.choices {
             let nextID = possibleChoices[sender.currentTitle!]
             
@@ -31,10 +34,15 @@ class ChoiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if story.id == "0-31" {
+            tipView = EasyTipView(text: "아래 선택지 중에\n하나를 선택하세요")
+            tipView?.show(animated: true, forView: self.stackView, withinSuperview: self.view)
+        }
+        
         
         self.isModalInPresentation = true
         
-        self.questionLabel.text = story.question
+        self.questionLabel.text = "당신은 어떻게 하시겠습니까?"
         
         var idx = 0
         if let possibleChoices = story.choices {

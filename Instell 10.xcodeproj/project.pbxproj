@@ -66,6 +66,7 @@
 		F1A1F3FF2577EFEE0024348F /* ver1_3-1-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1A1F3FA2577EFEC0024348F /* ver1_3-1-2.gif */; };
 		F1A1F4002577EFEE0024348F /* ver1_3-6-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1A1F3FB2577EFED0024348F /* ver1_3-6-1.gif */; };
 		F1BD1C7D2577D16500E89B61 /* 2-1-0-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1BD1C7C2577D16500E89B61 /* 2-1-0-1.gif */; };
+		F1E6787D257964F600CA6C00 /* ToolTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6787C257964F600CA6C00 /* ToolTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +133,7 @@
 		F1A1F3FA2577EFEC0024348F /* ver1_3-1-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ver1_3-1-2.gif"; sourceTree = "<group>"; };
 		F1A1F3FB2577EFED0024348F /* ver1_3-6-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ver1_3-6-1.gif"; sourceTree = "<group>"; };
 		F1BD1C7C2577D16500E89B61 /* 2-1-0-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2-1-0-1.gif"; sourceTree = "<group>"; };
+		F1E6787C257964F600CA6C00 /* ToolTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolTip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				F10B1A98255FCD3900DEBFE2 /* SceneDelegate.swift */,
 				F10B1A9A255FCD3900DEBFE2 /* InitialViewController.swift */,
 				F14C48CF255FDE37002A3468 /* SceneViewController.swift */,
+				F1E6787C257964F600CA6C00 /* ToolTip.swift */,
 				F14C48D2255FDE43002A3468 /* ChoiceViewController.swift */,
 				F10B1AAB255FD75C00DEBFE2 /* DataStructure.swift */,
 				F10B1AAE255FD95800DEBFE2 /* Data.swift */,
@@ -463,6 +466,7 @@
 				F145C415257550A0009271D9 /* Phase3_ver1.swift in Sources */,
 				F145C41225754461009271D9 /* Phase2.swift in Sources */,
 				F12CE9F4257558CF009226C0 /* Phase3_ver2.swift in Sources */,
+				F1E6787D257964F600CA6C00 /* ToolTip.swift in Sources */,
 				F14C48D3255FDE43002A3468 /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -595,7 +599,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -612,9 +616,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = CJG8NYLG53;
 				INFOPLIST_FILE = "Instell 10/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,9 +638,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = CJG8NYLG53;
 				INFOPLIST_FILE = "Instell 10/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
