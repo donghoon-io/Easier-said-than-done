@@ -9,8 +9,8 @@ import Foundation
 
 
 var phase3_ver2 = [ //“”
-    Story(imageName: "ver2_3-1-1", dday: "D-85", id: "ver2_3-1-1", nextId: "ver2_3-1-2", text: "어느 때와 같은 등교길이다. A는 문득 버스 창 밖을 바라봤다. 가을이 오고 있었다.\n정신 없는 한 달이었다. EBS 교재가 새로 나왔고, 조금은 선선한 바람이 불어왔다.", action: .text, gif: "ver2_3-1-1"),
-    Story(imageName: "ver2_3-1-2", dday: "D-85", id: "ver2_3-1-2", nextId: "ver2_3-2-1", text: "수업 시간에 자습을 주는 선생님들이 늘어났고, 잎들이 점차 색을 잃고 있었다. 창 밖의 풍경은 계속해서 달라지지만, 시험 날짜만은 달라지지 않는다고. 그녀는 생각했다.", action: .text, gif: "ver2_3-1-2"),
+    Story(imageName: "ver2_3-1-1", dday: "D-85", id: "ver2_3-1-1", nextId: "ver2_3-1-2", text: "여느 때와 같은 버스 안 등교길이었다.\nA: “뭐했다고 벌써 가을이네....”", action: .text, gif: "ver2_3-1-1"),
+    Story(imageName: "ver2_3-1-2", dday: "D-85", id: "ver2_3-1-2", nextId: "ver2_3-2-1", text: "미주 : “야 A야 같이가!”\nA: “잠깐만~ 나 채좀 챙기고”", action: .text, gif: "ver2_3-1-2"),
     Story(imageName: "ver2_3-2-1", dday: "D-75", id: "ver2_3-2-1", nextId: "ver2_3-2-2", text: "소문이 해결된 이후로, 반 분위기는 한결 편안했다. 쉬는 시간마다 애들과 떠들고, 가끔 매점 다녀오고 다 같이 공부하는. 여느 고3 교실의 풍경이었다.", action: .text),
     Story(imageName: "ver2_3-2-2", dday: "D-75", id: "ver2_3-2-2", nextId: "ver2_3-2-3", text: "담임쌤과는 요즘 생기부랑 자소서 문제로 부쩍 바빴다. 운영위원장 사건 이후, A의 진로에 더 큰 책임감이 생기셨는지, 이것 저것 꼼꼼하게 봐주시기 시작했다.", action: .text),
     Story(imageName: "ver2_3-2-3", dday: "D-75", id: "ver2_3-2-3", nextId: "ver2_3-2-4", text: "A는 그런 담임 쌤께 실제로 많은 도움을 받고 있었고 고마움도 느꼈다.\n'쌤 너무 좋은데…… 뭔가 요즘 들어 조금 조급해보이네…'", action: .text),

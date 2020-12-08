@@ -9,8 +9,8 @@ import Foundation
 
 
 var phase3_ver1 = [ //“”
-    Story(imageName: "ver1_3-1-1", dday: "D-85", id: "ver1_3-1-1", nextId: "ver1_3-1-2", text: "어느 때와 같은 등교길이다. A는 문득 버스 창 밖을 바라봤다. 가을이 오고 있었다.\n정신 없는 한 달이었다. EBS 교재가 새로 나왔고, 조금은 선선한 바람이 불어왔다.", action: .text, gif: "ver1_3-1-1"),
-    Story(imageName: "ver1_3-1-2", dday: "D-85", id: "ver1_3-1-2", nextId: "ver1_3-2-1", text: "수업 시간에 자습을 주는 선생님들이 늘어났고, 잎들이 점차 색을 잃고 있었다. 창 밖의 풍경은 계속해서 달라지지만, 시험 날짜만은 달라지지 않는다고. 그녀는 생각했다.", action: .text, gif: "ver1_3-1-2"),
+    Story(imageName: "ver1_3-1-1", dday: "D-85", id: "ver1_3-1-1", nextId: "ver1_3-1-2", text: "여느 때와 같은 버스 안 등교길이었다.\nA: “뭐했다고 벌써 가을이네....”", action: .text, gif: "ver1_3-1-1"),
+    Story(imageName: "ver1_3-1-2", dday: "D-85", id: "ver1_3-1-2", nextId: "ver1_3-2-1", text: "미주 : “야 A야 같이가!”\nA: “잠깐만~ 나 채좀 챙기고”", action: .text, gif: "ver1_3-1-2"),
     Story(imageName: "ver1_3-2-1", dday: "D-75", id: "ver1_3-2-1", nextId: "ver1_3-2-2", text: "오늘 오후는 동아리 시간이다. 담임 쌤과 어색해진 이후로는 동아리 시간이 훨씬 더 편하다고, A는 생각했다. 곧 있을 시 대회 준비로 배드민턴 부는 들떠 있었다.", action: .text),
     Story(imageName: "ver1_3-2-2", dday: "D-75", id: "ver1_3-2-2", nextId: "ver1_3-2-3", text: "학교에 내 소문이 돌 때, 적어도 배드민턴 부 애들만은 A 앞에서 수근거리지 않았다. 같은 반이 아닌, 소위 적당히 친한 관계에 대한 나름의 예의인 듯 했다.", action: .text),
     Story(imageName: "ver1_3-2-3", dday: "D-75", id: "ver1_3-2-3", nextId: "ver1_3-2-4", text: "모든 오해가 풀린 이후에, 배드민턴 부 친구들과 A의 관계는 오히려 더 좋아졌다. 거리낌이 있었다가 갑자기 사라진 것에 대한 반작용 같은 거라고, A는 생각했다.", action: .text),

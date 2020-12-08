@@ -29,7 +29,7 @@ var phase1 = [
     Story(imageName: "1-19", dday: "D-153", id: "1-19", nextId: "1-20", text: "교실 앞에 명단을 붙이자 애들이 몰려들었다.\n“아 뭐야. 국어 수행?”", action: .text, gif: "1-19"),
     Story(imageName: "1-20", dday: "D-153", id: "1-20", nextId: "1-21", text: "“난 또 졸업사진 조 나온 줄…”\n“그런데 뭐야. 박지현 너 수행 안냈어?”", action: .text),
     Story(imageName: "1-21", dday: "D-153", id: "1-21", nextId: "1-22", text: "“뭔 소리야. 나 지현이 A한테 내는 거 봤는데?”", action: .text),
-    Story(imageName: "1-22", dday: "D-153", title: "지헌", id: "1-22", nextId: "1-23", text: "“나 냈는데? A. 나 너한테 냈잖아.”", action: .text),
+    Story(imageName: "1-22", dday: "D-153", title: "지현", id: "1-22", nextId: "1-23", text: "“나 냈는데? A. 나 너한테 냈잖아.”", action: .text),
     Story(imageName: "1-23", dday: "D-153", title: "나", id: "1-23", nextId: "1-24", text: "“어 그러게. 지현이 나한테 냈는데…\n쌤한테 다시 여쭤볼게.”", action: .text, gif: "1-23"),
     Story(imageName: "1-24", dday: "D-153", title: "나", id: "1-24", nextId: "1-25", text: "국어선생님께 다시 여쭤보았다.", action: .text, gif: "1-24"),
     Story(imageName: "1-25", dday: "D-153", title: "국어선생님", id: "1-25", nextId: "1-26", text: "“없는데? A 잘 갖고 온 거 맞아?”", action: .text),
@@ -52,7 +52,7 @@ var phase1 = [
     Story(imageName: "1-39-A", dday: "D-151", id: "1-39-A", nextId: "1-40-A", text: "용기를 내보기로 했다. 지현이한테 직접 갔다.\n애들이 에워싸기 시작했다.", action: .text, gif: "1-39-A"),
     Story(id: "1-40-A", action: .choice, question: "지현이에게 말을 걸기로 한 A. 무슨 말을 할까.", choices: ["지현아, 나 아니야.": "1-41-A", "지현아, 괜찮아?": "1-41-A"]),
     Story(imageName: "1-41-A", dday: "D-151", id: "1-41-A", nextId: "1-42-A", text: "지현이는 말 없이 자리를 떴다.\n자리를 뜨는 지현 옆에 연서가 따라갔다.", action: .text, gif: "1-41-A"),
-    Story(imageName: "1-42-A", dday: "D-151", title: "국어선생님", id: "1-42-A", nextId: "1-43-A", text: "“지현아, 수행평가 다시 내고,\n형평성에 따라 늦게 제출한 감점 처리는 불가피하다.”", action: .text),
+    Story(imageName: "1-42-A", dday: "D-151", title: "국어선생님", id: "1-42-A", nextId: "1-43-A", text: "“지현아, 수행평가 다시 내고,\n형평성에 따라 늦게 제출한 것에 대한 감점 처리는 불가피하다.”", action: .text),
     Story(imageName: "1-43-A", dday: "D-151", title: "반 아이들", id: "1-43-A", nextId: "1-44-A", text: "“불공평해요. A 점수를 깎아야죠.”", action: .text),
     Story(imageName: "1-44-A", dday: "D-151", id: "1-44-A", nextId: "1-45-A", text: "그때 불현듯 어제 교무실 문 틈 사이로 보인 애의 폰케이스가 생각났다.\n최근에 누군가 자랑했었다.", action: .text),
     Story(imageName: "1-45-A", dday: "D-151", id: "1-45-A", nextId: "1-46-A", text: "연서였다.", action: .text),
@@ -87,7 +87,11 @@ var phase1 = [
     Story(id: "1-74-A", action: .choice, question: "화가 난 A. 어떻게 할까.", choices: ["인스타에 사진을 올리고 사건의 전말을 다 밝힌다.": "1-75-A-A", "원래대로 돌아왔으니, 잊어버리고 공부에 집중한다.": "1-75-A-B"]),
     Story(imageName: "1-75-A-A", dday: "D-150", id: "1-75-A-A", nextId: "1-76-A-A", text: "올려버렸다.\n조회수는 높았고, 연서는 학교에서 사실상 매장됐다.", action: .text),
     Story(imageName: "1-76-A-A", dday: "D-150", id: "1-76-A-A", nextId: "1-77-A-A", text: "나에 대한 모든 오해가 풀렸고,\n지현이와의 관계는 더욱 끈끈해졌다.", action: .text),
-    Story(imageName: "1-77-A-A", dday: "D-150", id: "1-77-A-A", nextId: "EXIT", text: "하지만 학교폭력에 휘말렸고,\n재수를 하게 됐다.", action: .text),
+    Story(imageName: "1-77-A-A", dday: "D-150", id: "1-77-A-A", nextId: "1-77-A-A-1", text: "하지만 학교폭력에 휘말려버렸다. \n아이들은 이제 연서 보고 허언증에다가 도벽까지 있다고 했다.", action: .text),
+    Story(imageName: "1-77-A-A", dday: "D-150", id: "1-77-A-A-1", nextId: "1-77-A-A-2", text: "그렇게 모두 입을 모아 나를 욕하던 아이들은 어느새 연서에게 화살을 돌렸다. \n연서는 힘들어 했고, 학교폭력위원회에 나를 신고했다.", action: .text),
+    Story(imageName: "1-77-A-A", dday: "D-150", id: "1-77-A-A-2", nextId: "1-77-A-A-3", text: "나는 나의 억울함을, 정당 방위임을 이야기했다. \n학교에선 서로 사과하는 것으로 매듭을 지었지만,  학폭이라는 주홍글씨는 지울 수 없었다. ", action: .text),
+    Story(imageName: "1-77-A-A", dday: "D-150", id: "1-77-A-A-3", nextId: "1-77-A-A-4", text: "모든 학교 생활이 없던 게 되었기에, 수시는 쓰지 못했다. \n공부에도 집중하지 못해 수능도 망쳐버렸다. ", action: .text),
+    Story(imageName: "1-77-A-A", dday: "D-150", id: "1-77-A-A-4", nextId: "EXIT", text: "그렇게 나는 재수를 하게 됐다.", action: .text),
     Story(imageName: "1-75-A-B", dday: "D-150", id: "1-75-A-B", nextId: "2-1-0-1", text: "마음을 가라앉히는데 시간이 걸렸지만,\n공부에 다시 집중을 하기 시작했다.", action: .text)
 ]
 
