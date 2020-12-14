@@ -9,7 +9,7 @@ import Foundation
 
 
 var phase3_ver2 = [ //“”
-    Story(imageName: "ver2_3-1-1", dday: "D-85", id: "ver2_3-1-1", nextId: "ver2_3-1-2", text: "여느 때와 같은 버스 안 등교길이었다.\nA: “뭐했다고 벌써 가을이네....”", action: .text, gif: "ver2_3-1-1"),
+    Story(imageName: "ver2_3-1-1", dday: "D-85", id: "ver2_3-1-1", nextId: "ver2_3-1-2", text: "여느 때와 같은 버스 안 등교길이었다.\nA: “뭐했다고 벌써 가을이네....”", action: .text, gif: "ver2_3-1-1", sound: "가을소리"),
     Story(imageName: "ver2_3-1-2", dday: "D-85", id: "ver2_3-1-2", nextId: "ver2_3-2-1", text: "미주 : “야 A야 같이가!”\nA: “잠깐만~ 나 채좀 챙기고”", action: .text, gif: "ver2_3-1-2"),
     Story(imageName: "ver2_3-2-1", dday: "D-75", id: "ver2_3-2-1", nextId: "ver2_3-2-2", text: "소문이 해결된 이후로, 반 분위기는 한결 편안했다. 쉬는 시간마다 애들과 떠들고, 가끔 매점 다녀오고 다 같이 공부하는. 여느 고3 교실의 풍경이었다.", action: .text),
     Story(imageName: "ver2_3-2-2", dday: "D-75", id: "ver2_3-2-2", nextId: "ver2_3-2-3", text: "담임쌤과는 요즘 생기부랑 자소서 문제로 부쩍 바빴다. 운영위원장 사건 이후, A의 진로에 더 큰 책임감이 생기셨는지, 이것 저것 꼼꼼하게 봐주시기 시작했다.", action: .text),
@@ -30,7 +30,7 @@ var phase3_ver2 = [ //“”
     Story(dday: "D-70", id: "ver2_3-3-6", action: .choice, question: "어떻게 해야할까?", choices: ["결심한 건 당당하게 말하는 게 나아. 당장 교무실 가서 멘토 멘티 시간 낭비라 못하겠다고 말씀드리자": "ver2_3-3-6-out1", "그래도 그냥 싫다고 하면 엄청 실망하시겠지..? 방법을 찾아보자.": "ver2_3-4-1"], gif: "ver2_3-3-6"),
     Story(imageName: "ver2_3-3-6-out1", dday: "D-70", title: "담임선생님", id: "ver2_3-3-6-out1", nextId: "ver2_3-3-6-out2", text: "“그러니까 A야… 친구들이랑 다 같이...”", action: .text),
     Story(imageName: "ver2_3-3-6-out2", dday: "D-70", title: "나", id: "ver2_3-3-6-out2", nextId: "ver2_3-3-6-out3", text: "“아니오, 선생님. 죄송하지만 저는 제 시간 써 가면서 의미 없는 일 하기는 싫어요.”", action: .text),
-    Story(imageName: "ver2_3-3-6-out3", dday: "D-70", title: "담임선생님", id: "ver2_3-3-6-out3", nextId: "sinnyeom", text: "“그래 알겠다. 너의 결정이니까. 그런데 쌤은 조금 실망스럽구나. 일단 쉬는 시간 끝나가니까 교실로 돌아가라.”", action: .text),
+    Story(imageName: "ver2_3-3-6-out3", dday: "D-70", title: "담임선생님", id: "ver2_3-3-6-out3", nextId: "sinnyeom", text: "“그래 알겠다. 너의 결정이니까. 그런데 쌤은 조금 실망스럽구나. 일단 쉬는 시간 끝나가니까 교실로 돌아가라.”", action: .text, sound: "한숨"),
     Story(dday: "D-69", id: "ver2_3-4-1", nextId: "ver2_3-4-2", text: "다음 날, 고민하던 A는 복도에서 생각에 잠겨 있었다. 반대쪽 품 안에 모의고사 문제집을 가득 쌓고 지나가는 지현이를 발견했다.", action: .text, gif: "ver2_3-4-1"),
     Story(imageName: "ver2_3-4-2", dday: "D-69", title: "나", id: "ver2_3-4-2", nextId: "ver2_3-4-3", text: "“야 이민 가냐 ㅋㅋㅋ. 잠만 아니 근데 생각해보니까 너는 멘토제 때 어디 있었어. 담임 쌤이 야자 첫시간은 멘토제 하라고 했잖아.”", action: .text),
     Story(imageName: "ver2_3-4-3", dday: "D-69", title: "지현", id: "ver2_3-4-3", nextId: "ver2_3-4-4", text: "“요즘 학주가 전교 20등 이상인 애들 야자 교실 말고 면학실에서 하라잖아. 그거 말씀드리니까 담임쌤이 빼주시던데?”", action: .text),
@@ -45,7 +45,7 @@ var phase3_ver2 = [ //“”
     Story(imageName: "ver2_3-5-1", dday: "D-68", title: "나", id: "ver2_3-5-1", nextId: "ver2_3-5-2", text: "“선생님, 다름이 아니라 면학실 말인데요...”", action: .text),
     Story(imageName: "ver2_3-5-2", dday: "D-68", title: "담임선생님", id: "ver2_3-5-2", nextId: "ver2_3-5-3", text: "“쌤도 공고 봤다. 학생부에서 공부 잘 하는 애들 대상으로 모으고 있나 보더구나. 강제는 아니니까 따로 너한테 별 말 없었으면 안 가도 될거다.”", action: .text),
     Story(imageName: "ver2_3-5-3", dday: "D-68", title: "나", id: "ver2_3-5-3", nextId: "ver2_3-5-4", text: "“선생님, 제가 다른 반 애들한테 들은 건데요, 애들이 왜 A는 면학실 안 오냐고 학생주임 쌤한테 따지고 있대요.”", action: .text),
-    Story(imageName: "ver2_3-5-4", dday: "D-68", id: "ver2_3-5-4", nextId: "ver2_3-5-5", text: "담임 선생님의 얼굴에 잠깐 곤란한 표정이 스쳤다.\n\nA는 마치 같이 전쟁을 치룬 파트너의 은근한 표정으로 다시 말을 이어나갔다.", action: .text),
+    Story(imageName: "ver2_3-5-4", dday: "D-68", id: "ver2_3-5-4", nextId: "ver2_3-5-5", text: "담임 선생님의 얼굴에 잠깐 곤란한 표정이 스쳤다.\n\nA는 마치 같이 전쟁을 치룬 파트너의 은근한 표정으로 다시 말을 이어나갔다.", action: .text, sound: "긴장감"),
     Story(imageName: "ver2_3-5-5", dday: "D-68", title: "나", id: "ver2_3-5-5", nextId: "ver2_3-5-7", text: "“학생주임 쌤도 그렇고, 저는 애들한테 안 좋게 소문나는 게 너무 무서워요. 저 애들한테 오해 받았던거 아시잖아요”", action: .text),
     Story(imageName: "ver2_3-5-7", dday: "D-68", title: "나", id: "ver2_3-5-7", nextId: "ver2_3-5-8", text: "“이번에 멘토 멘티 하시려는 거 너무 동의하고 저도 같이 애들 도와주고 싶은데요, 저는 아무래도 이번에 면학실 가야 할 것 같아요.”", action: .text),
     Story(imageName: "ver2_3-5-8", dday: "D-68", title: "나", id: "ver2_3-5-8", nextId: "ver2_3-5-9", text: "“아무래도 생기부 철이라 걱정도 되고, 다시 안 좋은 소문 나고 싶지 않아요.\n쌤, 이해하시죠?”", action: .text),

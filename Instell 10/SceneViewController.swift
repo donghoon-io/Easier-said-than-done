@@ -8,6 +8,7 @@
 import UIKit
 import SwiftyGif
 import EasyTipView
+import AVFoundation
 
 class SceneViewController: UIViewController, SendStory {
     
@@ -19,10 +20,37 @@ class SceneViewController: UIViewController, SendStory {
     @IBOutlet weak var endingTextView: UITextView!
     @IBOutlet weak var endingGifImageView: UIImageView!
     
+    var player: AVAudioPlayer?
+    
     var isPhase3_ver1 = true
     var ending: String?
     var endingIndex = 1
     var tipView: EasyTipView?
+    
+    func playSound(name: String) {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "m4a")
+        else {
+            print("no file found")
+            return
+        }
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
     
     
     func sendStory(storyID: String) {
@@ -75,12 +103,41 @@ class SceneViewController: UIViewController, SendStory {
     
     @objc func nextClicked() {
         tipView?.dismiss()
+        if let sound = currentStory.sound {
+            playSound(name: sound)
+        }
         switch currentStory.action {
         case .choice:
             return
         default:
             if let end = ending {
                 switch end {
+                case "goso":
+                    if endingIndex == goso.count {
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        self.endingTextView.text = goso[endingIndex].text ?? ""
+                        self.endingTextView.centerVertically()
+                        self.endingTextView.layoutIfNeeded()
+                        if let img = goso[endingIndex].imageName {
+                            self.endingImageView.isHidden = false
+                            self.endingGifImageView.isHidden = true
+                            self.endingImageView.image = UIImage(named: img)
+                        } else {
+                            do {
+                                self.endingImageView.isHidden = true
+                                self.endingGifImageView.isHidden = false
+                                let gifView = try UIImage(gifName: goso[endingIndex].gif!)
+                                self.endingGifImageView.stopAnimatingGif()
+                                self.endingGifImageView.gifImage = nil
+                                self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                                self.endingGifImageView.startAnimatingGif()
+                            } catch {
+                                print("error rendering gif goso")
+                            }
+                        }
+                        self.endingIndex += 1
+                    }
                 case "chosea":
                     if endingIndex == chosea.count {
                         self.dismiss(animated: true, completion: nil)
@@ -161,7 +218,25 @@ class SceneViewController: UIViewController, SendStory {
                     }
                 }
             }
-            else if currentStory.nextId == "chosea" {
+            else if currentStory.nextId == "goso" {
+                ending = "goso"
+                self.title = ""
+                self.endingView.isHidden = false
+                do {
+                    self.endingImageView.isHidden = true
+                    self.endingGifImageView.isHidden = false
+                    let gifView = try UIImage(gifName: goso[0].gif!)
+                    self.endingGifImageView.stopAnimatingGif()
+                    self.endingGifImageView.gifImage = nil
+                    self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                    self.endingGifImageView.startAnimatingGif()
+                    self.endingTextView.text = goso[0].text ?? ""
+                    self.endingTextView.centerVertically()
+                    self.endingTextView.layoutIfNeeded()
+                } catch {
+                    print("error rendering gif goso init")
+                }
+            } else if currentStory.nextId == "chosea" {
                 ending = "chosea"
                 self.title = ""
                 self.endingView.isHidden = false
@@ -297,7 +372,11 @@ class SceneViewController: UIViewController, SendStory {
             self.mainImage.isHidden = false
             self.gifImageView.stopAnimatingGif()
             self.gifImageView.gifImage = nil
-            self.mainImage.image = UIImage(named: story.imageName!)
+            if let img = story.imageName {
+                self.mainImage.image = UIImage(named: img)
+            } else {
+                self.mainImage.image = UIImage(color: .black)
+            }
         }
         self.descriptionTextView.text = story.text
         
@@ -328,3 +407,16 @@ extension UITextView {
     }
     
 }
+public extension UIImage {
+      public convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
+        let rect = CGRect(origin: .zero, size: size)
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        color.setFill()
+        UIRectFill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        guard let cgImage = image?.cgImage else { return nil }
+        self.init(cgImage: cgImage)
+      }
+    }

@@ -20,7 +20,7 @@ var phase3_ver1 = [ //“”
     Story(imageName: "ver1_3-3-2", dday: "D-70", id: "ver1_3-3-2", nextId: "ver1_3-3-3", text: "운영위원장 사건 이후 학생주임은 이것 저것에서 A를 챙겨줬다. 입시 정보나 생기부 기록 등에서 A는 꽤 많은 도움을 받고 있었다.", action: .text),
     Story(imageName: "ver1_3-3-3", dday: "D-70", title: "학생 주임", id: "ver1_3-3-3", nextId: "ver1_3-3-4", text: "“손에 그건... 아 배드민턴채구나. 맞다 A야 교무실에 배드민턴 대회 참가 공문이 와 있더라. 수능이 코 앞이라 우리 학교는 참여 안 하기로 했다.”", action: .text),
     Story(imageName: "ver1_3-3-4", dday: "D-70", title: "나", id: "ver1_3-3-4", nextId: "ver1_3-4-1", text: "“네...?”\n\nA가 미쳐 반응하기도 전에, 학생주임은 A를 지나쳐 갔다.", action: .text, gif: "ver1_3-3-4"),
-    Story(imageName: "ver1_3-4-1", dday: "D-69", title: "미주", id: "ver1_3-4-1", nextId: "ver1_3-4-1-1", text: "“야, 야 A야 소식 들었어….?”", action: .text),
+    Story(imageName: "ver1_3-4-1", dday: "D-69", title: "미주", id: "ver1_3-4-1", nextId: "ver1_3-4-1-1", text: "“야, 야 A야 소식 들었어….?”", action: .text, sound: "웅성거림"),
     Story(imageName: "ver1_3-4-1", dday: "D-69", title: "동아리원 1", id: "ver1_3-4-1-1", nextId: "ver1_3-4-2", text: "“아니 오바지, 이미 준비 다 하고 있었는데 이걸 막는다고?”", action: .text),
     Story(imageName: "ver1_3-4-2", dday: "D-69", title: "동아리원 2", id: "ver1_3-4-2", nextId: "ver1_3-4-3", text: "“저기 A야. 너 학생주임이랑 친하잖아. 어떻게 잘 말해보면 안 돼?”\n\n다른 아이들의 시선이 A에게로 쏠렸다. 시선은 기대감으로 차 있었다.", action: .text),
     Story(imageName: "ver1_3-4-3", dday: "D-69", id: "ver1_3-4-3", nextId: "ver1_3-4-4", text: "A도 대회에 나가고 싶지 않은 건 아니었다. 배드민턴은 고등학교 생활 동안 A의 취미이자, 스트레스 해소이자 일종의 숨통이었다.", action: .text),
@@ -40,7 +40,7 @@ var phase3_ver1 = [ //“”
     Story(dday: "D-68", id: "ver1_3-5-6-1", nextId: "ver1_3-6-1", action: .text, gif: "ver1_3-5-6-1"),
     Story(imageName: "ver1_3-6-1", dday: "D-67", title: "나", id: "ver1_3-6-1", nextId: "ver1_3-6-2", text: "다음 날, A는 교무실 상담실을 찾아가 학주에게 상담을 요청했다.\n\n“선생님, 저희 배드민턴부 말인데요...”", action: .text, gif: "ver1_3-6-1"),
     Story(imageName: "ver1_3-6-2", dday: "D-67", title: "학년부장", id: "ver1_3-6-2", nextId: "ver1_3-6-3", text: "“그럴 줄 알았다. A야. 근데 너도 알지만 대회 준비하는 게 그냥 되는게 아니잖냐. 하다 보면 승부욕도 생기고 또 자습 시간이다, 야자 시간이다 야금야금 뺏길 텐데, 너한테 유리한 게 하나도 없다.”", action: .text),
-    Story(imageName: "ver1_3-6-3", dday: "D-67", title: "나", id: "ver1_3-6-3", nextId: "ver1_3-6-4", text: "“선생님 제가 과학부 애한테 들었는데요.”\n\n학생주임의 표정이 순간 굳어졌다.", action: .text),
+    Story(imageName: "ver1_3-6-3", dday: "D-67", title: "나", id: "ver1_3-6-3", nextId: "ver1_3-6-4", text: "“선생님 제가 과학부 애한테 들었는데요.”\n\n학생주임의 표정이 순간 굳어졌다.", action: .text, sound: "긴장감"),
     Story(imageName: "ver1_3-6-4", dday: "D-67", title: "나", id: "ver1_3-6-4", nextId: "ver1_3-6-5", text: "“아직 애들하고 얘기해보지는 않았지만 저는 선생님 결정이 맞다고 생각해요. 3학년 때 시 대회 수상은 생각보다 좋은 스펙이잖아요. 우리가 공부만 하지 않고 여러 군데에 흥미를 가졌다.... 이런 식으로 자소서에도 쓸 수 있구요.”", action: .text),
     Story(imageName: "ver1_3-6-5", dday: "D-67", title: "나", id: "ver1_3-6-5", nextId: "ver1_3-6-6", text: "“그런데 선생님, 아시다시피 저희 배드민턴 부도 꽤 해요. 시 대회면 아마 못해도 3등은 할 걸요? 저희 애들도 수시도 많고, 저도 수시인데, 자소서나 생기부에 꽤 잘 쓸 수 있지 않을까요?”", action: .text),
     Story(imageName: "ver1_3-6-6", dday: "D-67", title: "학년부장", id: "ver1_3-6-6", nextId: "chosea", text: "“……그래 그렇게 생각할 수도 있겠네. 다른 쌤들하고 조금 더 이야기해보고 결정나면 전달하마.”", action: .text)
