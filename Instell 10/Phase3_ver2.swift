@@ -26,11 +26,11 @@ var phase3_ver2 = [ //“”
     Story(imageName: "ver2_3-3-2", dday: "D-70", id: "ver2_3-3-2", nextId: "ver2_3-3-3", text: "A는 미칠 것 같았다. 정말 이런 시간 낭비가 없다 생각했다. 단순히 공부 잘하는 사람의 이기적인 생각은 아니었다. 멘티들도 이 시간을 누구보다 지루해했다.", action: .text),
     Story(imageName: "ver2_3-3-3", dday: "D-70", id: "ver2_3-3-3", nextId: "ver2_3-3-4", text: "모두가 필요성을 느끼지 못하는 제도가 존재해야 할 이유를 A는 도무지 상상할 수 없었다. 그러나, 어려운 일들을 겪어 나가며 얻은 담임쌤과의 신뢰였다.", action: .text),
     Story(imageName: "ver2_3-3-4", dday: "D-70", id: "ver2_3-3-4", nextId: "ver2_3-3-5", text: "A는 선생님께 받은, 그리고 앞으로 받을 도움을 생각했다. 그리고 요 며칠 본인이 느꼈던 좌절감을 생각했다. 마음 속에 두 가지가 저울질되고 있었다.", action: .text),
-    Story(id: "ver2_3-3-5", action: .choice, question: "어떻게 해야할까?", choices: ["근데 선생님 말씀이 맞긴 하잖아. 다 같이 잘 되면 좋지 뭐. 야자 첫 시간만이라니까... 다시 복습한다고 생각하면 뭔가 배우는 게 있을 거야.": "EXIT", "그래 이건 아니야… 아무리 그래도 아닌 건 아니야.": "ver2_3-3-6"]),
+    Story(id: "ver2_3-3-5", action: .choice, question: "어떻게 해야할까?", choices: ["근데 선생님 말씀이 맞긴 하잖아. 다 같이 잘 되면 좋지 뭐. 야자 첫 시간만이라니까... 다시 복습한다고 생각하면 뭔가 배우는 게 있을 거야.": "suneung", "그래 이건 아니야… 아무리 그래도 아닌 건 아니야.": "ver2_3-3-6"]),
     Story(dday: "D-70", id: "ver2_3-3-6", action: .choice, question: "어떻게 해야할까?", choices: ["결심한 건 당당하게 말하는 게 나아. 당장 교무실 가서 멘토 멘티 시간 낭비라 못하겠다고 말씀드리자": "ver2_3-3-6-out1", "그래도 그냥 싫다고 하면 엄청 실망하시겠지..? 방법을 찾아보자.": "ver2_3-4-1"], gif: "ver2_3-3-6"),
     Story(imageName: "ver2_3-3-6-out1", dday: "D-70", title: "담임선생님", id: "ver2_3-3-6-out1", nextId: "ver2_3-3-6-out2", text: "“그러니까 A야… 친구들이랑 다 같이...”", action: .text),
     Story(imageName: "ver2_3-3-6-out2", dday: "D-70", title: "나", id: "ver2_3-3-6-out2", nextId: "ver2_3-3-6-out3", text: "“아니오, 선생님. 죄송하지만 저는 제 시간 써 가면서 의미 없는 일 하기는 싫어요.”", action: .text),
-    Story(imageName: "ver2_3-3-6-out3", dday: "D-70", title: "담임선생님", id: "ver2_3-3-6-out3", nextId: "EXIT", text: "“그래 알겠다. 너의 결정이니까. 그런데 쌤은 조금 실망스럽구나. 일단 쉬는 시간 끝나가니까 교실로 돌아가라.”", action: .text),
+    Story(imageName: "ver2_3-3-6-out3", dday: "D-70", title: "담임선생님", id: "ver2_3-3-6-out3", nextId: "sinnyeom", text: "“그래 알겠다. 너의 결정이니까. 그런데 쌤은 조금 실망스럽구나. 일단 쉬는 시간 끝나가니까 교실로 돌아가라.”", action: .text),
     Story(dday: "D-69", id: "ver2_3-4-1", nextId: "ver2_3-4-2", text: "다음 날, 고민하던 A는 복도에서 생각에 잠겨 있었다. 반대쪽 품 안에 모의고사 문제집을 가득 쌓고 지나가는 지현이를 발견했다.", action: .text, gif: "ver2_3-4-1"),
     Story(imageName: "ver2_3-4-2", dday: "D-69", title: "나", id: "ver2_3-4-2", nextId: "ver2_3-4-3", text: "“야 이민 가냐 ㅋㅋㅋ. 잠만 아니 근데 생각해보니까 너는 멘토제 때 어디 있었어. 담임 쌤이 야자 첫시간은 멘토제 하라고 했잖아.”", action: .text),
     Story(imageName: "ver2_3-4-3", dday: "D-69", title: "지현", id: "ver2_3-4-3", nextId: "ver2_3-4-4", text: "“요즘 학주가 전교 20등 이상인 애들 야자 교실 말고 면학실에서 하라잖아. 그거 말씀드리니까 담임쌤이 빼주시던데?”", action: .text),
@@ -50,5 +50,5 @@ var phase3_ver2 = [ //“”
     Story(imageName: "ver2_3-5-7", dday: "D-68", title: "나", id: "ver2_3-5-7", nextId: "ver2_3-5-8", text: "“이번에 멘토 멘티 하시려는 거 너무 동의하고 저도 같이 애들 도와주고 싶은데요, 저는 아무래도 이번에 면학실 가야 할 것 같아요.”", action: .text),
     Story(imageName: "ver2_3-5-8", dday: "D-68", title: "나", id: "ver2_3-5-8", nextId: "ver2_3-5-9", text: "“아무래도 생기부 철이라 걱정도 되고, 다시 안 좋은 소문 나고 싶지 않아요.\n쌤, 이해하시죠?”", action: .text),
     Story(imageName: "ver2_3-5-9", dday: "D-68", id: "ver2_3-5-9", nextId: "ver2_3-5-10", text: "선생님께서는 잠시 말이 없으셨다. 절반의 진실에 절반의 거짓말. 나를 믿고 계신건지, 눈치를 채셨지만 모르는 척 해 주시는 건지, A는 알 수 없었다.", action: .text),
-    Story(imageName: "ver2_3-5-10", dday: "D-68", title: "담임선생님", id: "ver2_3-5-10", nextId: "EXIT", text: "“그래 확실히 그렇겠구나. 선생님이 그럼 멘토멘티 어떻게 할지는 조금 생각해볼게, 일단 면학실로 짐부터 옮겨라.”", action: .text)
+    Story(imageName: "ver2_3-5-10", dday: "D-68", title: "담임선생님", id: "ver2_3-5-10", nextId: "chosea", text: "“그래 확실히 그렇겠구나. 선생님이 그럼 멘토멘티 어떻게 할지는 조금 생각해볼게, 일단 면학실로 짐부터 옮겨라.”", action: .text)
 ]

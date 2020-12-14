@@ -30,7 +30,7 @@ var phase3_ver1 = [ //“”
     Story(imageName: "ver1_3-4-5-out2", dday: "D-69", title: "미주", id: "ver1_3-4-5-out2", nextId: "EXIT", text: "“그렇게 생각할 수도 있지…. 일단 알겠어 A야…”", action: .text),
     Story(imageName: "ver1_3-4-6", dday: "D-69", title: "미주", id: "ver1_3-4-6", nextId: "ver1_3-4-7", text: "“그럼 그럼! 근데 학교에서 막는데 우리 어쩌지?”", action: .text),
     Story(id: "ver1_3-4-7", action: .choice, question: "어떻게 해야할까?", choices: ["어차피 신청서는 학생이 직접 내는 거야. 대회 날 토요일이던데, 그냥 우리끼리 몰래 나가자": "ver1_3-4-7-out1", "뭔가 방법이 있을 거야. 좀만 기다려보자.": "ver1_3-5-1"]),
-    Story(imageName: "ver1_3-4-7-out1", dday: "D-69", id: "ver1_3-4-7-out1", nextId: "EXIT", text: "복도에서는 학생주임이 또 늦게 들어가는 학생들을 채근하고 있었다.\n‘뭐 어쩌겠어… 하고 싶은 건 해야지.’", action: .text),
+    Story(imageName: "ver1_3-4-7-out1", dday: "D-69", id: "ver1_3-4-7-out1", nextId: "sinnyeom", text: "복도에서는 학생주임이 또 늦게 들어가는 학생들을 채근하고 있었다.\n‘뭐 어쩌겠어… 하고 싶은 건 해야지.’", action: .text),
     Story(imageName: "ver1_3-5-1", dday: "D-68", id: "ver1_3-5-1", nextId: "ver1_3-5-2", text: "다음 날. 어떻게 해결해야 할지 갈피가 잡하지 않은 A는 복도를 돌아다니다, 지현이를 마주쳤다. 지현이의 손에는 플라스크가 잔뜩 들려 있었다.", action: .text, gif: "ver1_3-5-1"),
     Story(imageName: "ver1_3-5-2", dday: "D-68", title: "나", id: "ver1_3-5-2", nextId: "ver1_3-5-3", text: "“안녕…야 너 웬 플라스크야?”", action: .text),
     Story(imageName: "ver1_3-5-3", dday: "D-68", title: "지현", id: "ver1_3-5-3", nextId: "ver1_3-5-3", text: "“과학부 이번에 R&D 대회 나가잖아. 그거 준비중이지.”", action: .text),
@@ -43,5 +43,5 @@ var phase3_ver1 = [ //“”
     Story(imageName: "ver1_3-6-3", dday: "D-67", title: "나", id: "ver1_3-6-3", nextId: "ver1_3-6-4", text: "“선생님 제가 과학부 애한테 들었는데요.”\n\n학생주임의 표정이 순간 굳어졌다.", action: .text),
     Story(imageName: "ver1_3-6-4", dday: "D-67", title: "나", id: "ver1_3-6-4", nextId: "ver1_3-6-5", text: "“아직 애들하고 얘기해보지는 않았지만 저는 선생님 결정이 맞다고 생각해요. 3학년 때 시 대회 수상은 생각보다 좋은 스펙이잖아요. 우리가 공부만 하지 않고 여러 군데에 흥미를 가졌다.... 이런 식으로 자소서에도 쓸 수 있구요.”", action: .text),
     Story(imageName: "ver1_3-6-5", dday: "D-67", title: "나", id: "ver1_3-6-5", nextId: "ver1_3-6-6", text: "“그런데 선생님, 아시다시피 저희 배드민턴 부도 꽤 해요. 시 대회면 아마 못해도 3등은 할 걸요? 저희 애들도 수시도 많고, 저도 수시인데, 자소서나 생기부에 꽤 잘 쓸 수 있지 않을까요?”", action: .text),
-    Story(imageName: "ver1_3-6-6", dday: "D-67", title: "학년부장", id: "ver1_3-6-6", nextId: "EXIT", text: "“……그래 그렇게 생각할 수도 있겠네. 다른 쌤들하고 조금 더 이야기해보고 결정나면 전달하마.”", action: .text)
+    Story(imageName: "ver1_3-6-6", dday: "D-67", title: "학년부장", id: "ver1_3-6-6", nextId: "chosea", text: "“……그래 그렇게 생각할 수도 있겠네. 다른 쌤들하고 조금 더 이야기해보고 결정나면 전달하마.”", action: .text)
 ]

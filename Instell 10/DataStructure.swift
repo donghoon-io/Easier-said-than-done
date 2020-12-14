@@ -12,10 +12,10 @@ enum Action {
 }
 
 class Ending {
-    var id: String
-    var imageName: String?
-    var text: String?
-    var gif: String?
+    var id: String = ""
+    var imageName: String? = nil
+    var text: String? = nil
+    var gif: String? = nil
     init () {
     }
     init(id: String, imageName: String? = nil, text: String? = nil, gif: String? = nil) {

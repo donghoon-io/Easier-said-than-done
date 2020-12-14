@@ -219,6 +219,9 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oOM-7x-ETo">
                                         <rect key="frame" x="0.0" y="0.0" width="834" height="1124"/>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lLT-1w-VoJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="1124"/>
+                                    </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3h-DU-rAo">
                                         <rect key="frame" x="0.0" y="0.0" width="834" height="1124"/>
                                         <subviews>
@@ -229,8 +232,8 @@
                                                     <fragment>
                                                         <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                                         <attributes>
-                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <font key="NSFont" size="25" name="AppleSDGothicNeo-Regular"/>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="30" name="AppleSDGothicNeo-Medium"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -238,7 +241,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="EGE-SW-71h" secondAttribute="trailing" constant="30" id="1Mo-uL-Id3"/>
                                             <constraint firstAttribute="bottom" secondItem="EGE-SW-71h" secondAttribute="bottom" constant="30" id="Ul7-pF-mRa"/>
@@ -249,14 +252,18 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lLT-1w-VoJ" secondAttribute="bottom" id="8xd-gd-FJ3"/>
                                     <constraint firstItem="oOM-7x-ETo" firstAttribute="leading" secondItem="qXE-4s-x4U" secondAttribute="leading" id="Kfd-6y-pvg"/>
+                                    <constraint firstItem="lLT-1w-VoJ" firstAttribute="leading" secondItem="qXE-4s-x4U" secondAttribute="leading" id="LQ0-RH-yaQ"/>
                                     <constraint firstItem="S3h-DU-rAo" firstAttribute="leading" secondItem="qXE-4s-x4U" secondAttribute="leading" id="RT4-tC-CCM"/>
                                     <constraint firstItem="oOM-7x-ETo" firstAttribute="top" secondItem="qXE-4s-x4U" secondAttribute="top" id="SfH-fz-pTh"/>
                                     <constraint firstAttribute="bottom" secondItem="S3h-DU-rAo" secondAttribute="bottom" id="SoY-oI-TDc"/>
                                     <constraint firstItem="S3h-DU-rAo" firstAttribute="top" secondItem="qXE-4s-x4U" secondAttribute="top" id="Xnh-8e-NdI"/>
                                     <constraint firstAttribute="trailing" secondItem="oOM-7x-ETo" secondAttribute="trailing" id="c8d-9d-I03"/>
+                                    <constraint firstAttribute="trailing" secondItem="lLT-1w-VoJ" secondAttribute="trailing" id="oHp-3V-lF4"/>
                                     <constraint firstAttribute="bottom" secondItem="oOM-7x-ETo" secondAttribute="bottom" id="rIh-iu-2pK"/>
                                     <constraint firstAttribute="trailing" secondItem="S3h-DU-rAo" secondAttribute="trailing" id="tpW-YU-yGd"/>
+                                    <constraint firstItem="lLT-1w-VoJ" firstAttribute="top" secondItem="qXE-4s-x4U" secondAttribute="top" id="uSc-2N-1ih"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -292,6 +299,7 @@
                         <outlet property="constraint2" destination="hQj-lh-Yrh" id="Maf-ge-t66"/>
                         <outlet property="descriptionTextView" destination="KAt-zN-pbm" id="o7I-yu-y92"/>
                         <outlet property="descriptionView" destination="Hjc-2n-dTj" id="SxY-f6-ajU"/>
+                        <outlet property="endingGifImageView" destination="lLT-1w-VoJ" id="uBt-Tt-oxD"/>
                         <outlet property="endingImageView" destination="oOM-7x-ETo" id="oQs-SD-zA8"/>
                         <outlet property="endingTextView" destination="EGE-SW-71h" id="Nf6-RL-OU1"/>
                         <outlet property="endingView" destination="qXE-4s-x4U" id="8lV-UU-wzx"/>

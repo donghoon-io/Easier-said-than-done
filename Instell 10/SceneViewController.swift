@@ -17,9 +17,11 @@ class SceneViewController: UIViewController, SendStory {
     @IBOutlet weak var endingImageView: UIImageView!
     @IBOutlet weak var endingView: UIView!
     @IBOutlet weak var endingTextView: UITextView!
+    @IBOutlet weak var endingGifImageView: UIImageView!
     
     var isPhase3_ver1 = true
-    
+    var ending: String?
+    var endingIndex = 1
     var tipView: EasyTipView?
     
     
@@ -67,8 +69,8 @@ class SceneViewController: UIViewController, SendStory {
     @IBOutlet weak var gifImageView: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     
-    //var currentStory = storyList[0]
-    var currentStory = phase2[0]
+    var currentStory = storyList[0]
+    //var currentStory = phase2[0]
     
     
     @objc func nextClicked() {
@@ -77,7 +79,144 @@ class SceneViewController: UIViewController, SendStory {
         case .choice:
             return
         default:
-            if currentStory.nextId != "EXIT" {
+            if let end = ending {
+                switch end {
+                case "chosea":
+                    if endingIndex == chosea.count {
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        self.endingTextView.text = chosea[endingIndex].text ?? ""
+                        self.endingTextView.centerVertically()
+                        self.endingTextView.layoutIfNeeded()
+                        if let img = chosea[endingIndex].imageName {
+                            self.endingImageView.isHidden = false
+                            self.endingGifImageView.isHidden = true
+                            self.endingImageView.image = UIImage(named: img)
+                        } else {
+                            do {
+                                self.endingImageView.isHidden = true
+                                self.endingGifImageView.isHidden = false
+                                let gifView = try UIImage(gifName: chosea[endingIndex].gif!)
+                                self.endingGifImageView.stopAnimatingGif()
+                                self.endingGifImageView.gifImage = nil
+                                self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                                self.endingGifImageView.startAnimatingGif()
+                            } catch {
+                                print("error rendering gif chosea")
+                            }
+                        }
+                        self.endingIndex += 1
+                    }
+                case "sinnyeom":
+                    if endingIndex == sinnyeom.count {
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        self.endingTextView.text = sinnyeom[endingIndex].text ?? ""
+                        self.endingTextView.centerVertically()
+                        self.endingTextView.layoutIfNeeded()
+                        if let img = sinnyeom[endingIndex].imageName {
+                            self.endingImageView.isHidden = false
+                            self.endingGifImageView.isHidden = true
+                            self.endingImageView.image = UIImage(named: img)
+                        } else {
+                            do {
+                                self.endingImageView.isHidden = true
+                                self.endingGifImageView.isHidden = false
+                                let gifView = try UIImage(gifName: sinnyeom[endingIndex].gif!)
+                                self.endingGifImageView.stopAnimatingGif()
+                                self.endingGifImageView.gifImage = nil
+                                self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                                self.endingGifImageView.startAnimatingGif()
+                            } catch {
+                                print("error rendering gif sinnyeom")
+                            }
+                        }
+                        self.endingIndex += 1
+                    }
+                default:
+                    if endingIndex == suneung.count {
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        self.endingTextView.text = suneung[endingIndex].text ?? ""
+                        self.endingTextView.centerVertically()
+                        self.endingTextView.layoutIfNeeded()
+                        if let img = suneung[endingIndex].imageName {
+                            self.endingImageView.isHidden = false
+                            self.endingGifImageView.isHidden = true
+                            self.endingImageView.image = UIImage(named: img)
+                        } else {
+                            do {
+                                self.endingImageView.isHidden = true
+                                self.endingGifImageView.isHidden = false
+                                let gifView = try UIImage(gifName: suneung[endingIndex].gif!)
+                                self.endingGifImageView.stopAnimatingGif()
+                                self.endingGifImageView.gifImage = nil
+                                self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                                self.endingGifImageView.startAnimatingGif()
+                            } catch {
+                                print("error rendering gif suneung")
+                            }
+                        }
+                        self.endingIndex += 1
+                    }
+                }
+            }
+            else if currentStory.nextId == "chosea" {
+                ending = "chosea"
+                self.title = ""
+                self.endingView.isHidden = false
+                do {
+                    self.endingImageView.isHidden = true
+                    self.endingGifImageView.isHidden = false
+                    let gifView = try UIImage(gifName: chosea[0].gif!)
+                    self.endingGifImageView.stopAnimatingGif()
+                    self.endingGifImageView.gifImage = nil
+                    self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                    self.endingGifImageView.startAnimatingGif()
+                    self.endingTextView.text = chosea[0].text ?? ""
+                    self.endingTextView.centerVertically()
+                    self.endingTextView.layoutIfNeeded()
+                } catch {
+                    print("error rendering gif chosea init")
+                }
+            } else if currentStory.nextId == "sinnyeom" {
+                ending = "sinnyeom"
+                self.title = ""
+                self.endingView.isHidden = false
+                do {
+                    self.endingImageView.isHidden = true
+                    self.endingGifImageView.isHidden = false
+                    let gifView = try UIImage(gifName: sinnyeom[0].gif!)
+                    self.endingGifImageView.stopAnimatingGif()
+                    self.endingGifImageView.gifImage = nil
+                    self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                    self.endingGifImageView.startAnimatingGif()
+                    self.endingTextView.text = sinnyeom[0].text ?? ""
+                    self.endingTextView.centerVertically()
+                    self.endingTextView.layoutIfNeeded()
+                } catch {
+                    print("error rendering gif sinnyeom init")
+                }
+            } else if currentStory.nextId == "suneung" {
+                ending = "suneung"
+                self.title = ""
+                self.endingView.isHidden = false
+                do {
+                    self.endingImageView.isHidden = true
+                    self.endingGifImageView.isHidden = false
+                    let gifView = try UIImage(gifName: suneung[0].gif!)
+                    self.endingGifImageView.stopAnimatingGif()
+                    self.endingGifImageView.gifImage = nil
+                    self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                    self.endingGifImageView.startAnimatingGif()
+                    self.endingTextView.text = suneung[0].text ?? ""
+                    self.endingTextView.centerVertically()
+                    self.endingTextView.layoutIfNeeded()
+                } catch {
+                    print("error rendering gif suneung init")
+                }
+            }
+            else {
                 var nextID = currentStory.nextId
                 if currentStory.nextId == "3-1-1" {
                     nextID = (isPhase3_ver1 ? "ver1_" : "ver2_") + "3-1-1"
@@ -95,8 +234,6 @@ class SceneViewController: UIViewController, SendStory {
                 } else {
                     drawScreen(story: currentStory)
                 }
-            } else {
-                self.dismiss(animated: true, completion: nil)
             }
         }
     }
@@ -117,7 +254,10 @@ class SceneViewController: UIViewController, SendStory {
         
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(nextClicked))
         singleTap.numberOfTapsRequired = 1
+        let singleTap1 = UITapGestureRecognizer(target: self, action: #selector(nextClicked))
+        singleTap1.numberOfTapsRequired = 1
         descriptionTextView.addGestureRecognizer(singleTap)
+        endingTextView.addGestureRecognizer(singleTap1)
         
         drawScreen(story: currentStory)
         
@@ -177,4 +317,14 @@ class SceneViewController: UIViewController, SendStory {
 
 protocol SendStory {
     func sendStory(storyID: String)
+}
+extension UITextView {
+    func centerVertically() {
+        let fittingSize = CGSize(width: bounds.width, height: CGFloat.greatestFiniteMagnitude)
+        let size = sizeThatFits(fittingSize)
+        let topOffset = (bounds.size.height - size.height * zoomScale) / 2
+        let positiveTopOffset = max(1, topOffset)
+        contentOffset.y = -positiveTopOffset
+    }
+    
 }
