@@ -14,6 +14,9 @@ class SceneViewController: UIViewController, SendStory {
     //2-4-3-1 -> phase3_ver1
     //2-4-2-1 -> phase3_ver2
     //3-1-1 -> case by bool below
+    @IBOutlet weak var endingImageView: UIImageView!
+    @IBOutlet weak var endingView: UIView!
+    @IBOutlet weak var endingTextView: UITextView!
     
     var isPhase3_ver1 = true
     

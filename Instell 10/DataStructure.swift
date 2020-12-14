@@ -11,6 +11,21 @@ enum Action {
     case choice, text
 }
 
+class Ending {
+    var id: String
+    var imageName: String?
+    var text: String?
+    var gif: String?
+    init () {
+    }
+    init(id: String, imageName: String? = nil, text: String? = nil, gif: String? = nil) {
+        self.id = id
+        self.imageName = imageName
+        self.text = text
+        self.gif = gif
+    }
+}
+
 class Story {
     var imageName: String?
     var dday: String?

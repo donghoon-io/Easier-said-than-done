@@ -72,6 +72,15 @@
 		26D711232587677400BF1E47 /* ver1_3-5-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D7111D2587677400BF1E47 /* ver1_3-5-1.gif */; };
 		26D711242587677400BF1E47 /* ver1_3-1-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D7111E2587677400BF1E47 /* ver1_3-1-2.gif */; };
 		26D7112A2587685100BF1E47 /* 1-41-1-A.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D711292587685100BF1E47 /* 1-41-1-A.gif */; };
+		26D7112D258772D700BF1E47 /* 처세.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7112C258772D700BF1E47 /* 처세.swift */; };
+		26D71130258772E600BF1E47 /* 신념.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7112F258772E600BF1E47 /* 신념.swift */; };
+		26D71133258772EC00BF1E47 /* 순응.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D71132258772EC00BF1E47 /* 순응.swift */; };
+		26D7113C258774D700BF1E47 /* chosea_9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D71136258774D500BF1E47 /* chosea_9.gif */; };
+		26D7113D258774D700BF1E47 /* chosea_7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D71137258774D600BF1E47 /* chosea_7.gif */; };
+		26D7113E258774D700BF1E47 /* chosea_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D71138258774D600BF1E47 /* chosea_3.gif */; };
+		26D7113F258774D700BF1E47 /* chosea_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D71139258774D600BF1E47 /* chosea_1.gif */; };
+		26D71140258774D700BF1E47 /* chosea_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D7113A258774D600BF1E47 /* chosea_5.gif */; };
+		26D71141258774D700BF1E47 /* chosea_11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D7113B258774D700BF1E47 /* chosea_11.gif */; };
 		2A68FEC2BE6D2F5C4F5FD3CA /* Pods_Instell_10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EABF01E2786970E12EFE871 /* Pods_Instell_10.framework */; };
 		F10B1A97255FCD3900DEBFE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B1A96255FCD3900DEBFE2 /* AppDelegate.swift */; };
 		F10B1A99255FCD3900DEBFE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B1A98255FCD3900DEBFE2 /* SceneDelegate.swift */; };
@@ -159,6 +168,15 @@
 		26D7111D2587677400BF1E47 /* ver1_3-5-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ver1_3-5-1.gif"; sourceTree = "<group>"; };
 		26D7111E2587677400BF1E47 /* ver1_3-1-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ver1_3-1-2.gif"; sourceTree = "<group>"; };
 		26D711292587685100BF1E47 /* 1-41-1-A.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "1-41-1-A.gif"; sourceTree = "<group>"; };
+		26D7112C258772D700BF1E47 /* 처세.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "처세.swift"; sourceTree = "<group>"; };
+		26D7112F258772E600BF1E47 /* 신념.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "신념.swift"; sourceTree = "<group>"; };
+		26D71132258772EC00BF1E47 /* 순응.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "순응.swift"; sourceTree = "<group>"; };
+		26D71136258774D500BF1E47 /* chosea_9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chosea_9.gif; sourceTree = "<group>"; };
+		26D71137258774D600BF1E47 /* chosea_7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chosea_7.gif; sourceTree = "<group>"; };
+		26D71138258774D600BF1E47 /* chosea_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chosea_3.gif; sourceTree = "<group>"; };
+		26D71139258774D600BF1E47 /* chosea_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chosea_1.gif; sourceTree = "<group>"; };
+		26D7113A258774D600BF1E47 /* chosea_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chosea_5.gif; sourceTree = "<group>"; };
+		26D7113B258774D700BF1E47 /* chosea_11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chosea_11.gif; sourceTree = "<group>"; };
 		8EABF01E2786970E12EFE871 /* Pods_Instell_10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instell_10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02EB82E7CC8E41109814F3F /* Pods-Instell 10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instell 10.release.xcconfig"; path = "Target Support Files/Pods-Instell 10/Pods-Instell 10.release.xcconfig"; sourceTree = "<group>"; };
 		D45CE77D3C1CE8EBBA73FE3B /* Pods-Instell 10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instell 10.debug.xcconfig"; path = "Target Support Files/Pods-Instell 10/Pods-Instell 10.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +239,20 @@
 			path = tiff;
 			sourceTree = "<group>";
 		};
+		26D711352587732200BF1E47 /* 처세 */ = {
+			isa = PBXGroup;
+			children = (
+				26D71139258774D600BF1E47 /* chosea_1.gif */,
+				26D71138258774D600BF1E47 /* chosea_3.gif */,
+				26D7113A258774D600BF1E47 /* chosea_5.gif */,
+				26D71137258774D600BF1E47 /* chosea_7.gif */,
+				26D71136258774D500BF1E47 /* chosea_9.gif */,
+				26D7113B258774D700BF1E47 /* chosea_11.gif */,
+			);
+			name = "처세";
+			path = "처세";
+			sourceTree = "<group>";
+		};
 		3BABF8E7455A7C502A0F62CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +302,9 @@
 				F10B1AAE255FD95800DEBFE2 /* Data.swift */,
 				F145C40B2575331A009271D9 /* Phase1.swift */,
 				F145C40E257536C6009271D9 /* Phase0.swift */,
+				26D7112C258772D700BF1E47 /* 처세.swift */,
+				26D7112F258772E600BF1E47 /* 신념.swift */,
+				26D71132258772EC00BF1E47 /* 순응.swift */,
 				F145C41125754461009271D9 /* Phase2.swift */,
 				F145C414257550A0009271D9 /* Phase3_ver1.swift */,
 				F12CE9F3257558CF009226C0 /* Phase3_ver2.swift */,
@@ -311,6 +346,7 @@
 		F1BD1C782577D0B300E89B61 /* gif */ = {
 			isa = PBXGroup;
 			children = (
+				26D711352587732200BF1E47 /* 처세 */,
 				F1A1F3ED2577EE760024348F /* phase 3_ver2 */,
 				F1A1F3EC2577EE700024348F /* phase 3_ver1 */,
 				F1BD1C7B2577D15900E89B61 /* phase 2 */,
@@ -465,6 +501,8 @@
 				26D7109625875A7800BF1E47 /* 1-21.tiff in Resources */,
 				F10B1AA0255FCD3C00DEBFE2 /* Assets.xcassets in Resources */,
 				26D711222587677400BF1E47 /* ver1_3-1-1.gif in Resources */,
+				26D7113C258774D700BF1E47 /* chosea_9.gif in Resources */,
+				26D71141258774D700BF1E47 /* chosea_11.gif in Resources */,
 				26D71076258750FC00BF1E47 /* 0-1-1.tiff in Resources */,
 				26D71104258761AF00BF1E47 /* 1-33.gif in Resources */,
 				26D7109825875A7800BF1E47 /* 1-31.tiff in Resources */,
@@ -477,6 +515,7 @@
 				26D71108258761AF00BF1E47 /* 1-14.gif in Resources */,
 				26D710DB2587617B00BF1E47 /* 2-1-0-8.gif in Resources */,
 				26D710DF2587617B00BF1E47 /* 2-2-0-1.gif in Resources */,
+				26D7113D258774D700BF1E47 /* chosea_7.gif in Resources */,
 				26D710D32587617B00BF1E47 /* 2-1-0-14.gif in Resources */,
 				26D7106C258750E500BF1E47 /* 0-3.tiff in Resources */,
 				26D710E02587617B00BF1E47 /* 2-3-0-3.gif in Resources */,
@@ -491,6 +530,7 @@
 				26D710E12587617B00BF1E47 /* 2-3-0-17-2.gif in Resources */,
 				26D7109C25875B8900BF1E47 /* 1-5.tiff in Resources */,
 				26D710FD258761AF00BF1E47 /* 1-16.gif in Resources */,
+				26D71140258774D700BF1E47 /* chosea_5.gif in Resources */,
 				26D710D92587617B00BF1E47 /* 2-4-2-13.gif in Resources */,
 				26D71105258761AF00BF1E47 /* 1-8.gif in Resources */,
 				F10B1A9E255FCD3900DEBFE2 /* Main.storyboard in Resources */,
@@ -500,12 +540,14 @@
 				26D711232587677400BF1E47 /* ver1_3-5-1.gif in Resources */,
 				26D71103258761AF00BF1E47 /* 1-41-A.gif in Resources */,
 				26D71070258750E500BF1E47 /* 0-7.tiff in Resources */,
+				26D7113F258774D700BF1E47 /* chosea_1.gif in Resources */,
 				26D711202587677400BF1E47 /* ver1_3-3-4.gif in Resources */,
 				26D71071258750E500BF1E47 /* 0-8.tiff in Resources */,
 				26D711142587675C00BF1E47 /* ver2_3-4-10-1.gif in Resources */,
 				26D7109925875A7800BF1E47 /* 1-33.tiff in Resources */,
 				26D71073258750E500BF1E47 /* 0-5.tiff in Resources */,
 				26D710822587525900BF1E47 /* 0-1.gif in Resources */,
+				26D7113E258774D700BF1E47 /* chosea_3.gif in Resources */,
 				F1A1F3C12577EC050024348F /* 0-32-B.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,10 +604,13 @@
 				F145C40F257536C6009271D9 /* Phase0.swift in Sources */,
 				F10B1A9B255FCD3900DEBFE2 /* InitialViewController.swift in Sources */,
 				F145C40C2575331A009271D9 /* Phase1.swift in Sources */,
+				26D71133258772EC00BF1E47 /* 순응.swift in Sources */,
 				F10B1AAF255FD95800DEBFE2 /* Data.swift in Sources */,
 				F10B1AAC255FD75C00DEBFE2 /* DataStructure.swift in Sources */,
 				F14C48D0255FDE37002A3468 /* SceneViewController.swift in Sources */,
 				F10B1A97255FCD3900DEBFE2 /* AppDelegate.swift in Sources */,
+				26D7112D258772D700BF1E47 /* 처세.swift in Sources */,
+				26D71130258772E600BF1E47 /* 신념.swift in Sources */,
 				F10B1A99255FCD3900DEBFE2 /* SceneDelegate.swift in Sources */,
 				F145C415257550A0009271D9 /* Phase3_ver1.swift in Sources */,
 				F145C41225754461009271D9 /* Phase2.swift in Sources */,
