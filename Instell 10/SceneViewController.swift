@@ -64,8 +64,8 @@ class SceneViewController: UIViewController, SendStory {
     @IBOutlet weak var gifImageView: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     
-    var currentStory = storyList[0]
-    //var currentStory = phase2[0]
+    //var currentStory = storyList[0]
+    var currentStory = phase2[0]
     
     
     @objc func nextClicked() {
@@ -142,7 +142,7 @@ class SceneViewController: UIViewController, SendStory {
                 self.gifImageView.setGifImage(gifView, loopCount: 1)
                 self.gifImageView.startAnimatingGif()
             } catch {
-                print("error rendering gif")
+                print("error rendering gif\(gif)")
                 self.gifImageView.isHidden = true
                 self.mainImage.isHidden = false
                 self.gifImageView.stopAnimatingGif()
