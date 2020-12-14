@@ -241,7 +241,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70472470238095231" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="EGE-SW-71h" secondAttribute="trailing" constant="30" id="1Mo-uL-Id3"/>
                                             <constraint firstAttribute="bottom" secondItem="EGE-SW-71h" secondAttribute="bottom" constant="30" id="Ul7-pF-mRa"/>

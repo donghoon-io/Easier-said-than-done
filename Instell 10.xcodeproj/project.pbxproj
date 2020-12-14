@@ -107,6 +107,13 @@
 		26D7117A25877C4F00BF1E47 /* suneung_9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D7117525877C4E00BF1E47 /* suneung_9.gif */; };
 		26D7117B25877C4F00BF1E47 /* suneung_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D7117625877C4E00BF1E47 /* suneung_1.gif */; };
 		26D7117C25877C4F00BF1E47 /* suneung_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D7117725877C4F00BF1E47 /* suneung_5.gif */; };
+		26D7117F258788F300BF1E47 /* 고소.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7117E258788F300BF1E47 /* 고소.swift */; };
+		26D71185258789B000BF1E47 /* goso_2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 26D71182258789B000BF1E47 /* goso_2.tiff */; };
+		26D71186258789B000BF1E47 /* goso_6.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 26D71183258789B000BF1E47 /* goso_6.tiff */; };
+		26D71187258789B000BF1E47 /* goso_4.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 26D71184258789B000BF1E47 /* goso_4.tiff */; };
+		26D7118C258789CD00BF1E47 /* goso_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D71189258789CC00BF1E47 /* goso_5.gif */; };
+		26D7118D258789CD00BF1E47 /* goso_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D7118A258789CC00BF1E47 /* goso_1.gif */; };
+		26D7118E258789CD00BF1E47 /* goso_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26D7118B258789CD00BF1E47 /* goso_3.gif */; };
 		2A68FEC2BE6D2F5C4F5FD3CA /* Pods_Instell_10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EABF01E2786970E12EFE871 /* Pods_Instell_10.framework */; };
 		F10B1A97255FCD3900DEBFE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B1A96255FCD3900DEBFE2 /* AppDelegate.swift */; };
 		F10B1A99255FCD3900DEBFE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B1A98255FCD3900DEBFE2 /* SceneDelegate.swift */; };
@@ -229,6 +236,13 @@
 		26D7117525877C4E00BF1E47 /* suneung_9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = suneung_9.gif; sourceTree = "<group>"; };
 		26D7117625877C4E00BF1E47 /* suneung_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = suneung_1.gif; sourceTree = "<group>"; };
 		26D7117725877C4F00BF1E47 /* suneung_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = suneung_5.gif; sourceTree = "<group>"; };
+		26D7117E258788F300BF1E47 /* 고소.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "고소.swift"; sourceTree = "<group>"; };
+		26D71182258789B000BF1E47 /* goso_2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = goso_2.tiff; sourceTree = "<group>"; };
+		26D71183258789B000BF1E47 /* goso_6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = goso_6.tiff; sourceTree = "<group>"; };
+		26D71184258789B000BF1E47 /* goso_4.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = goso_4.tiff; sourceTree = "<group>"; };
+		26D71189258789CC00BF1E47 /* goso_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = goso_5.gif; sourceTree = "<group>"; };
+		26D7118A258789CC00BF1E47 /* goso_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = goso_1.gif; sourceTree = "<group>"; };
+		26D7118B258789CD00BF1E47 /* goso_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = goso_3.gif; sourceTree = "<group>"; };
 		8EABF01E2786970E12EFE871 /* Pods_Instell_10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instell_10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02EB82E7CC8E41109814F3F /* Pods-Instell 10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instell 10.release.xcconfig"; path = "Target Support Files/Pods-Instell 10/Pods-Instell 10.release.xcconfig"; sourceTree = "<group>"; };
 		D45CE77D3C1CE8EBBA73FE3B /* Pods-Instell 10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instell 10.debug.xcconfig"; path = "Target Support Files/Pods-Instell 10/Pods-Instell 10.debug.xcconfig"; sourceTree = "<group>"; };
@@ -347,6 +361,20 @@
 			path = "순응";
 			sourceTree = "<group>";
 		};
+		26D71181258789A800BF1E47 /* 고소 */ = {
+			isa = PBXGroup;
+			children = (
+				26D7118A258789CC00BF1E47 /* goso_1.gif */,
+				26D7118B258789CD00BF1E47 /* goso_3.gif */,
+				26D71189258789CC00BF1E47 /* goso_5.gif */,
+				26D71182258789B000BF1E47 /* goso_2.tiff */,
+				26D71184258789B000BF1E47 /* goso_4.tiff */,
+				26D71183258789B000BF1E47 /* goso_6.tiff */,
+			);
+			name = "고소";
+			path = "고소";
+			sourceTree = "<group>";
+		};
 		3BABF8E7455A7C502A0F62CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +426,7 @@
 				F145C40E257536C6009271D9 /* Phase0.swift */,
 				26D7112C258772D700BF1E47 /* 처세.swift */,
 				26D7112F258772E600BF1E47 /* 신념.swift */,
+				26D7117E258788F300BF1E47 /* 고소.swift */,
 				26D71132258772EC00BF1E47 /* 순응.swift */,
 				F145C41125754461009271D9 /* Phase2.swift */,
 				F145C414257550A0009271D9 /* Phase3_ver1.swift */,
@@ -440,6 +469,7 @@
 		F1BD1C782577D0B300E89B61 /* gif */ = {
 			isa = PBXGroup;
 			children = (
+				26D71181258789A800BF1E47 /* 고소 */,
 				26D7116725877B1F00BF1E47 /* 순응 */,
 				26D7115025877AB500BF1E47 /* 신념 */,
 				26D711352587732200BF1E47 /* 처세 */,
@@ -597,6 +627,7 @@
 				26D710D22587617B00BF1E47 /* 2-1-0-1.gif in Resources */,
 				26D710DA2587617B00BF1E47 /* 2-4-2-9.gif in Resources */,
 				26D71102258761AF00BF1E47 /* 1-61-A.gif in Resources */,
+				26D7118E258789CD00BF1E47 /* goso_3.gif in Resources */,
 				26D7117C25877C4F00BF1E47 /* suneung_5.gif in Resources */,
 				26D7109525875A7800BF1E47 /* 1-27.tiff in Resources */,
 				26D71089258754C700BF1E47 /* 1-4.tiff in Resources */,
@@ -624,13 +655,16 @@
 				26D7114D2587753200BF1E47 /* chosea_8.tiff in Resources */,
 				26D7114B2587753200BF1E47 /* chosea_4.tiff in Resources */,
 				26D7111F2587677400BF1E47 /* ver1_3-5-6-1.gif in Resources */,
+				26D71186258789B000BF1E47 /* goso_6.tiff in Resources */,
 				26D7117A25877C4F00BF1E47 /* suneung_9.gif in Resources */,
 				26D71108258761AF00BF1E47 /* 1-14.gif in Resources */,
 				26D710DB2587617B00BF1E47 /* 2-1-0-8.gif in Resources */,
 				26D710DF2587617B00BF1E47 /* 2-2-0-1.gif in Resources */,
 				26D7113D258774D700BF1E47 /* chosea_7.gif in Resources */,
 				26D7115625877AC300BF1E47 /* sinnyeom_3.gif in Resources */,
+				26D7118C258789CD00BF1E47 /* goso_5.gif in Resources */,
 				26D710D32587617B00BF1E47 /* 2-1-0-14.gif in Resources */,
+				26D7118D258789CD00BF1E47 /* goso_1.gif in Resources */,
 				26D7106C258750E500BF1E47 /* 0-3.tiff in Resources */,
 				26D710E02587617B00BF1E47 /* 2-3-0-3.gif in Resources */,
 				26D711492587753200BF1E47 /* chosea_2.tiff in Resources */,
@@ -639,6 +673,7 @@
 				26D7117825877C4F00BF1E47 /* suneung_7.gif in Resources */,
 				26D71100258761AF00BF1E47 /* 1-17.gif in Resources */,
 				26D710D62587617B00BF1E47 /* 2-3-0-17-1.gif in Resources */,
+				26D71185258789B000BF1E47 /* goso_2.tiff in Resources */,
 				26D710FE258761AF00BF1E47 /* 1-29.gif in Resources */,
 				26D7116525877B0F00BF1E47 /* sinnyeom_4.tiff in Resources */,
 				26D711172587675C00BF1E47 /* ver2_3-1-1.gif in Resources */,
@@ -652,6 +687,7 @@
 				26D7117B25877C4F00BF1E47 /* suneung_1.gif in Resources */,
 				26D71105258761AF00BF1E47 /* 1-8.gif in Resources */,
 				F10B1A9E255FCD3900DEBFE2 /* Main.storyboard in Resources */,
+				26D71187258789B000BF1E47 /* goso_4.tiff in Resources */,
 				26D711162587675C00BF1E47 /* ver2_3-2-6-1.gif in Resources */,
 				26D710D42587617B00BF1E47 /* 2-4-1-2.gif in Resources */,
 				26D7116125877B0F00BF1E47 /* sinnyeom_2.tiff in Resources */,
@@ -737,6 +773,7 @@
 				F145C415257550A0009271D9 /* Phase3_ver1.swift in Sources */,
 				F145C41225754461009271D9 /* Phase2.swift in Sources */,
 				F12CE9F4257558CF009226C0 /* Phase3_ver2.swift in Sources */,
+				26D7117F258788F300BF1E47 /* 고소.swift in Sources */,
 				F1E6787D257964F600CA6C00 /* ToolTip.swift in Sources */,
 				F14C48D3255FDE43002A3468 /* ChoiceViewController.swift in Sources */,
 			);
