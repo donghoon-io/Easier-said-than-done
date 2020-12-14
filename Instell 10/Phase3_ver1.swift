@@ -9,8 +9,8 @@ import Foundation
 
 
 var phase3_ver1 = [ //“”
-    Story(imageName: "ver1_3-1-1", dday: "D-85", id: "ver1_3-1-1", nextId: "ver1_3-1-2", text: "여느 때와 같은 버스 안 등교길이었다.\nA: “뭐했다고 벌써 가을이네....”", action: .text, gif: "ver1_3-1-1"),
-    Story(imageName: "ver1_3-1-2", dday: "D-85", id: "ver1_3-1-2", nextId: "ver1_3-2-1", text: "미주 : “야 A야 같이가!”\nA: “잠깐만~ 나 채좀 챙기고”", action: .text, gif: "ver1_3-1-2"),
+    Story(dday: "D-85", id: "ver1_3-1-1", nextId: "ver1_3-1-2", text: "여느 때와 같은 버스 안 등교길이었다.\nA: “뭐했다고 벌써 가을이네....”", action: .text, gif: "ver1_3-1-1"),
+    Story(dday: "D-85", id: "ver1_3-1-2", nextId: "ver1_3-2-1", text: "미주 : “야 A야 같이가!”\nA: “잠깐만~ 나 채좀 챙기고”", action: .text, gif: "ver1_3-1-2"),
     Story(imageName: "ver1_3-2-1", dday: "D-75", id: "ver1_3-2-1", nextId: "ver1_3-2-2", text: "오늘 오후는 동아리 시간이다. 담임 쌤과 어색해진 이후로는 동아리 시간이 훨씬 더 편하다고, A는 생각했다. 곧 있을 시 대회 준비로 배드민턴 부는 들떠 있었다.", action: .text),
     Story(imageName: "ver1_3-2-2", dday: "D-75", id: "ver1_3-2-2", nextId: "ver1_3-2-3", text: "학교에 내 소문이 돌 때, 적어도 배드민턴 부 애들만은 A 앞에서 수근거리지 않았다. 같은 반이 아닌, 소위 적당히 친한 관계에 대한 나름의 예의인 듯 했다.", action: .text),
     Story(imageName: "ver1_3-2-3", dday: "D-75", id: "ver1_3-2-3", nextId: "ver1_3-2-4", text: "모든 오해가 풀린 이후에, 배드민턴 부 친구들과 A의 관계는 오히려 더 좋아졌다. 거리낌이 있었다가 갑자기 사라진 것에 대한 반작용 같은 거라고, A는 생각했다.", action: .text),
@@ -29,7 +29,6 @@ var phase3_ver1 = [ //“”
     Story(imageName: "ver1_3-4-5-out1", dday: "D-69", title: "동아리원 1", id: "ver1_3-4-5-out1", nextId: "ver1_3-4-5-out2", text: "“야 너 그러기야?”", action: .text),
     Story(imageName: "ver1_3-4-5-out2", dday: "D-69", title: "미주", id: "ver1_3-4-5-out2", nextId: "EXIT", text: "“그렇게 생각할 수도 있지…. 일단 알겠어 A야…”", action: .text),
     Story(imageName: "ver1_3-4-6", dday: "D-69", title: "미주", id: "ver1_3-4-6", nextId: "ver1_3-4-7", text: "“그럼 그럼! 근데 학교에서 막는데 우리 어쩌지?”", action: .text),
-    Story(imageName: "ver1_3-4-7", dday: "D-69", title: "나", id: "ver1_3-4-7", nextId: "ver1_3-4-8", text: "“그럼 그럼! 근데 학교에서 막는데 우리 어쩌지?”", action: .text),
     Story(id: "ver1_3-4-7", action: .choice, question: "어떻게 해야할까?", choices: ["어차피 신청서는 학생이 직접 내는 거야. 대회 날 토요일이던데, 그냥 우리끼리 몰래 나가자": "ver1_3-4-7-out1", "뭔가 방법이 있을 거야. 좀만 기다려보자.": "ver1_3-5-1"]),
     Story(imageName: "ver1_3-4-7-out1", dday: "D-69", id: "ver1_3-4-7-out1", nextId: "EXIT", text: "복도에서는 학생주임이 또 늦게 들어가는 학생들을 채근하고 있었다.\n‘뭐 어쩌겠어… 하고 싶은 건 해야지.’", action: .text),
     Story(imageName: "ver1_3-5-1", dday: "D-68", id: "ver1_3-5-1", nextId: "ver1_3-5-2", text: "다음 날. 어떻게 해결해야 할지 갈피가 잡하지 않은 A는 복도를 돌아다니다, 지현이를 마주쳤다. 지현이의 손에는 플라스크가 잔뜩 들려 있었다.", action: .text, gif: "ver1_3-5-1"),
@@ -37,7 +36,8 @@ var phase3_ver1 = [ //“”
     Story(imageName: "ver1_3-5-3", dday: "D-68", title: "지현", id: "ver1_3-5-3", nextId: "ver1_3-5-3", text: "“과학부 이번에 R&D 대회 나가잖아. 그거 준비중이지.”", action: .text),
     Story(imageName: "ver1_3-5-4", dday: "D-68", title: "나", id: "ver1_3-5-4", nextId: "ver1_3-5-5", text: "“너네는 학교에서 수능 전에 뭐하냐고 뭐라고 안해?”", action: .text),
     Story(imageName: "ver1_3-5-5", dday: "D-68", title: "지현", id: "ver1_3-5-5", nextId: "ver1_3-5-6", text: "“이거 비밀이라 했는데, 너니까 알려주는건데...... 우리 학교 과학부야 시 대회 나가면 무조건 최소 은상이잖아?”", action: .text),
-    Story(imageName: "ver1_3-5-6", dday: "D-68", title: "지현", id: "ver1_3-5-6", nextId: "ver1_3-6-1", text: "“과학부 애들중에는 수시 쓰는 애들이 많아서 학주가 그냥 조용히 준비하고 상 타오라고 했다던데? 우리 동아리 담당쌤이.”", action: .text),
+    Story(imageName: "ver1_3-5-6", dday: "D-68", title: "지현", id: "ver1_3-5-6", nextId: "ver1_3-5-6-1", text: "“과학부 애들중에는 수시 쓰는 애들이 많아서 학주가 그냥 조용히 준비하고 상 타오라고 했다던데? 우리 동아리 담당쌤이.”", action: .text),
+    Story(dday: "D-68", id: "ver1_3-5-6-1", nextId: "ver1_3-6-1", action: .text, gif: "ver1_3-5-6-1"),
     Story(imageName: "ver1_3-6-1", dday: "D-67", title: "나", id: "ver1_3-6-1", nextId: "ver1_3-6-2", text: "다음 날, A는 교무실 상담실을 찾아가 학주에게 상담을 요청했다.\n\n“선생님, 저희 배드민턴부 말인데요...”", action: .text, gif: "ver1_3-6-1"),
     Story(imageName: "ver1_3-6-2", dday: "D-67", title: "학년부장", id: "ver1_3-6-2", nextId: "ver1_3-6-3", text: "“그럴 줄 알았다. A야. 근데 너도 알지만 대회 준비하는 게 그냥 되는게 아니잖냐. 하다 보면 승부욕도 생기고 또 자습 시간이다, 야자 시간이다 야금야금 뺏길 텐데, 너한테 유리한 게 하나도 없다.”", action: .text),
     Story(imageName: "ver1_3-6-3", dday: "D-67", title: "나", id: "ver1_3-6-3", nextId: "ver1_3-6-4", text: "“선생님 제가 과학부 애한테 들었는데요.”\n\n학생주임의 표정이 순간 굳어졌다.", action: .text),
