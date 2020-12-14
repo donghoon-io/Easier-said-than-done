@@ -9,7 +9,8 @@ import Foundation
 
 
 var phase0 = [
-    Story(imageName: "0-1", dday: "D-240", title: "엄마", id: "0-1", nextId: "0-2", text: "“A야! 일어날 시간!\n너 또 공부하다가 옷도 안 갈아입고 그렇게 잠든거니?”", action: .text, gif: "0-1"),
+    Story(imageName: "0-1", dday: "D-240", id: "0-1", nextId: "0-1-1", action: .text, gif: "0-1"),
+    Story(imageName: "0-1-1.tiff", dday: "D-240", title: "엄마", id: "0-1-1", nextId: "0-2", text: "“A야! 일어날 시간!\n너 또 공부하다가 옷도 안 갈아입고 그렇게 잠든거니?”", action: .text, gif: "0-1-1"),
     Story(imageName: "0-2", dday: "D-240", title: "나", id: "0-2", nextId: "0-3", text: "“응? 아 그러네?”", action: .text),
     Story(imageName: "0-3", dday: "D-240", id: "0-3", nextId: "0-4", text: "어젯밤 또 새벽까지 공부를 하다가 책상에서 잠든 A.\nA는 3학년이 된 후 큰 압박감에 시달리고 있다.", action: .text),
     Story(imageName: "0-4", dday: "D-240", title: "엄마", id: "0-4", nextId: "0-5", text: "“밤에는 잠을 자야 컨디션 조절을 하지 안 그래?”", action: .text),
