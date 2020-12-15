@@ -61,7 +61,83 @@ class SceneViewController: UIViewController, SendStory {
             isPhase3_ver1 = false
         }
         
-        if storyID != "EXIT" {
+        if storyID == "goso" {
+            self.currentStory.action = .text
+            ending = "goso"
+            self.title = ""
+            self.endingView.isHidden = false
+            do {
+                self.endingImageView.isHidden = true
+                self.endingGifImageView.isHidden = false
+                let gifView = try UIImage(gifName: goso[0].gif!)
+                self.endingGifImageView.stopAnimatingGif()
+                self.endingGifImageView.gifImage = nil
+                self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                self.endingGifImageView.startAnimatingGif()
+                self.endingTextView.text = goso[0].text ?? ""
+                self.endingTextView.centerVertically()
+                self.endingTextView.layoutIfNeeded()
+            } catch {
+                print("error rendering gif goso init")
+            }
+        } else if storyID == "chosea" {
+            self.currentStory.action = .text
+            ending = "chosea"
+            self.title = ""
+            self.endingView.isHidden = false
+            do {
+                self.endingImageView.isHidden = true
+                self.endingGifImageView.isHidden = false
+                let gifView = try UIImage(gifName: chosea[0].gif!)
+                self.endingGifImageView.stopAnimatingGif()
+                self.endingGifImageView.gifImage = nil
+                self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                self.endingGifImageView.startAnimatingGif()
+                self.endingTextView.text = chosea[0].text ?? ""
+                self.endingTextView.centerVertically()
+                self.endingTextView.layoutIfNeeded()
+            } catch {
+                print("error rendering gif chosea init")
+            }
+        } else if storyID == "sinnyeom" {
+            self.currentStory.action = .text
+            ending = "sinnyeom"
+            self.title = ""
+            self.endingView.isHidden = false
+            do {
+                self.endingImageView.isHidden = true
+                self.endingGifImageView.isHidden = false
+                let gifView = try UIImage(gifName: sinnyeom[0].gif!)
+                self.endingGifImageView.stopAnimatingGif()
+                self.endingGifImageView.gifImage = nil
+                self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                self.endingGifImageView.startAnimatingGif()
+                self.endingTextView.text = sinnyeom[0].text ?? ""
+                self.endingTextView.centerVertically()
+                self.endingTextView.layoutIfNeeded()
+            } catch {
+                print("error rendering gif sinnyeom init")
+            }
+        } else if storyID == "suneung" {
+            self.currentStory.action = .text
+            ending = "suneung"
+            self.title = ""
+            self.endingView.isHidden = false
+            do {
+                self.endingImageView.isHidden = true
+                self.endingGifImageView.isHidden = false
+                let gifView = try UIImage(gifName: suneung[0].gif!)
+                self.endingGifImageView.stopAnimatingGif()
+                self.endingGifImageView.gifImage = nil
+                self.endingGifImageView.setGifImage(gifView, loopCount: 1)
+                self.endingGifImageView.startAnimatingGif()
+                self.endingTextView.text = suneung[0].text ?? ""
+                self.endingTextView.centerVertically()
+                self.endingTextView.layoutIfNeeded()
+            } catch {
+                print("error rendering gif suneung init")
+            }
+        } else if storyID != "EXIT" {
             let element = storyList.filter({ str in
                 str.id == storyID
             })[0]
@@ -80,7 +156,7 @@ class SceneViewController: UIViewController, SendStory {
     func title(_ isTitle: Bool, title: String? = nil) {
         if isTitle {
             self.constraint1.constant = 35
-            self.constraint2.constant = 15
+            self.constraint2.constant = 30
             self.titleLabel.isHidden = false
             self.titleLabel.text = title!
             self.view.layoutIfNeeded()
@@ -103,9 +179,6 @@ class SceneViewController: UIViewController, SendStory {
     
     @objc func nextClicked() {
         tipView?.dismiss()
-        if let sound = currentStory.sound {
-            playSound(name: sound)
-        }
         switch currentStory.action {
         case .choice:
             return
@@ -290,8 +363,9 @@ class SceneViewController: UIViewController, SendStory {
                 } catch {
                     print("error rendering gif suneung init")
                 }
-            }
-            else {
+            } else if currentStory.nextId == "EXIT" {
+                self.dismiss(animated: true, completion: nil)
+            } else {
                 var nextID = currentStory.nextId
                 if currentStory.nextId == "3-1-1" {
                     nextID = (isPhase3_ver1 ? "ver1_" : "ver2_") + "3-1-1"
@@ -300,6 +374,10 @@ class SceneViewController: UIViewController, SendStory {
                     str.id == nextID
                 })[0]
                 currentStory = element
+                
+                if let sound = currentStory.sound {
+                    playSound(name: sound)
+                }
                 
                 if element.action == .choice {
                     let choiceVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChoiceViewController") as! ChoiceViewController
@@ -350,7 +428,14 @@ class SceneViewController: UIViewController, SendStory {
     }
     
     func drawScreen(story: Story) {
-        if let gif = story.gif {
+        if story.action == .choice {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                let choiceVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChoiceViewController") as! ChoiceViewController
+                choiceVC.story = self.currentStory
+                choiceVC.sendStory = self
+                self.present(choiceVC, animated: true, completion: nil)
+            }
+        } else if let gif = story.gif {
             do {
                 self.mainImage.isHidden = true
                 self.gifImageView.isHidden = false

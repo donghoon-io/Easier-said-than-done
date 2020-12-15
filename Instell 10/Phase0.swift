@@ -9,16 +9,19 @@ import Foundation
 
 
 var phase0 = [
-    Story(imageName: "0-1", dday: "D-240", id: "0-1", nextId: "0-1-1", action: .text, gif: "0-1"),
-    Story(imageName: "0-1-1.tiff", dday: "D-240", title: "엄마", id: "0-1-1", nextId: "0-2", text: "“A야! 일어날 시간!\n너 또 공부하다가 옷도 안 갈아입고 그렇게 잠든거니?”", action: .text, gif: "0-1-1"),
+    Story(imageName: "black", dday: "D-240", id: "0-1", nextId: "0-1-1", action: .text),
+    Story(dday: "D-240", id: "0-1-1", nextId: "0-1-2", action: .text, gif: "0-1"),
+    Story(imageName: "0-1-1.tiff", dday: "D-240", title: "", id: "0-1-2", nextId: "0-1-3", text: "", action: .text, gif: "0-1-1"),
+    Story(imageName: "0-2", dday: "D-240", title: "나", id: "0-1-3", nextId: "0-2", text: "“A야! 일어날 시간!\n너 또 공부하다가 옷도 안 갈아입고 그렇게 잠든거니?”", action: .text),
     Story(imageName: "0-2", dday: "D-240", title: "나", id: "0-2", nextId: "0-3", text: "“응? 아 그러네?”", action: .text),
     Story(imageName: "0-3", dday: "D-240", id: "0-3", nextId: "0-4", text: "어젯밤 또 새벽까지 공부를 하다가 책상에서 잠든 A.\nA는 3학년이 된 후 큰 압박감에 시달리고 있다.", action: .text),
     Story(imageName: "0-4", dday: "D-240", title: "엄마", id: "0-4", nextId: "0-5", text: "“밤에는 잠을 자야 컨디션 조절을 하지 안 그래?”", action: .text),
     Story(imageName: "0-5", dday: "D-240", title: "나", id: "0-5", nextId: "0-6", text: "“그래도….. 밤에 누우면 한 문제만 더! 한 페이지만 더!\n이런 생각이 자꾸 들어서 잠이 안 오는데?”", action: .text),
     Story(imageName: "0-6", dday: "D-240", title: "엄마", id: "0-6", nextId: "0-7", text: "“너무 완벽주의에 철두철미한 것도 좋지는 않아.\n자꾸 부담감에 스트레스만 받잖아. 정해진 만큼만 해.”", action: .text),
     Story(imageName: "0-7", dday: "D-240", title: "나", id: "0-7", nextId: "0-8", text: "“열심히 해서 해가 될 건 없잖아.\n일단 준비하고 밥 먹을게.”", action: .text),
-    Story(imageName: "0-8", dday: "D-240", id: "0-8", nextId: "0-9", text: "다른 사람을 신경 쓰지 않고 자신의 공부만 잘하면 되는 것이 입시라고 생각하는 A는\n고등학교 3학년이 된 후 이렇게 새벽까지 공부를 하다가 잠들곤 한다.", action: .text),
-    Story(imageName: "0-9", dday: "D-240", id: "0-9", nextId: "0-10", text: "아침에 일어나서 학교에 가서 공부를 하고, 학원에 가서 공부를 하고,\n집에 와서 공부를 하다보면 원하는 대학에 합격할 수 있을 것이라고 굳게 믿는다.", action: .text, gif: "0-9"),
+    Story(imageName: "0-8", dday: "D-240", id: "0-8", nextId: "0-8-1", text: "다른 사람을 신경 쓰지 않고 자신의 공부만 잘하면 되는 것이 입시라고 생각하는 A는\n고등학교 3학년이 된 후 이렇게 새벽까지 공부를 하다가 잠들곤 한다.", action: .text),
+    Story(imageName: "0-8", dday: "D-240", id: "0-8-1", nextId: "0-9", text: "아침에 일어나서 학교에 가서 공부를 하고, 학원에 가서 공부를 하고,\n집에 와서 공부를 하다보면 원하는 대학에 합격할 수 있을 것이라고 굳게 믿는다", action: .text),
+    Story(imageName: "0-9", dday: "D-240", id: "0-9", nextId: "0-10", text: "", action: .text, gif: "0-9"),
     Story(imageName: "0-10", dday: "D-240", id: "0-10", nextId: "0-11", text: "오늘은 담임선생님과의 면담이 있는 날이다.\n성적과 학교장 추천 등 중요한 이야기가 오갈 것이다.", action: .text),
     Story(imageName: "0-11", dday: "D-240", title: "담임선생님", id: "0-11", nextId: "0-12", text: "“여기에 앉으렴 A야. 공부는 잘 하고 있니?”", action: .text),
     Story(imageName: "0-12", dday: "D-240", title: "나", id: "0-12", nextId: "0-13", text: "“그냥 저냥 하고 있어요.”", action: .text),
@@ -42,6 +45,8 @@ var phase0 = [
     Story(imageName: "0-30", dday: "D-240", id: "0-30", nextId: "0-31", text: "살짝 기분이 나쁜 A. 왜 내가 따라한다는 식으로 이야기를 하지? 물어볼까?", action: .text),
     Story(id: "0-31", action: .choice, question: "살짝 기분이 나쁜 A. 왜 내가 따라한다는 식으로 이야기를 하지? 물어볼까?", choices: ["그래서 내가 걔를 따라한다는 거야?": "0-32-A", "그냥 무시한다": "0-32-B"]),
     Story(imageName: "0-32-A", dday: "D-240", title: "친구 1", id: "0-32-A", nextId: "0-33-A", text: "“아니아니 그렇게 들렸어? 난 그냥 신기해서 물어본거야.\n왜 화를 내고 그래! 그런 뜻 아니야.”", action: .text),
-    Story(imageName: "0-33-A", dday: "D-240", title: "나", id: "0-33-A", nextId: "1-1", text: "“응 그래 알았어 나도 장난이야. 난 이만 갈게!”", action: .text),
-    Story(imageName: "0-32-B", dday: "D-240", title: "나", id: "0-32-B", nextId: "1-1", text: "“그럼 난 이만 갈게.”", action: .text, gif: "0-32-B")
+    Story(imageName: "0-33-A", dday: "D-240", title: "나", id: "0-33-A", nextId: "0-34-A", text: "“응 그래 알았어 나도 장난이야. 난 이만 갈게!”", action: .text),
+    Story(imageName: "0-34-A", dday: "D-240", title: "", id: "0-34-A", nextId: "1-1", text: "", action: .text, gif: "0-32-B"),
+    Story(imageName: "0-32-B", dday: "D-240", title: "나", id: "0-32-B", nextId: "0-33-B", text: "“그럼 난 이만 갈게.”", action: .text),
+    Story(dday: "D-240", title: "", id: "0-33-B", nextId: "1-1", text: "", action: .text, gif: "0-32-B")
 ]
