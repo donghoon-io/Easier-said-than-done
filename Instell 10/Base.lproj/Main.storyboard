@@ -16,119 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llt-Pm-0jw">
-                                <rect key="frame" x="50" y="238.5" width="734" height="117.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="서울대학교 정보문화학:">
-                                        <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="36" name="NanumGothic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="48" name="NanumGothic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="인터랙티브 스토리텔링 10조">
-                                        <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="48" name="NanumGothicExtraBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <attributedString key="attributedText">
-                                        <fragment content="서울대학교 정보문화학:">
-                                            <attributes>
-                                                <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="21" name="NanumGothic"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" ">
-                                            <attributes>
-                                                <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="48" name="NanumGothic"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="인터랙티브 스토리텔링 10조">
-                                            <attributes>
-                                                <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="31" name="NanumGothicExtraBold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwL-YI-r12">
-                                <rect key="frame" x="30" y="1049" width="774" height="75"/>
-                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundimage" translatesAutoresizingMaskIntoConstraints="NO" id="l7M-dt-Wxv">
+                                <rect key="frame" x="30" y="30" width="774" height="978.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="CqD-Rv-D3U">
+                                    <constraint firstAttribute="width" secondItem="l7M-dt-Wxv" secondAttribute="height" multiplier="1080:1365" id="g4h-eq-jz5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iY-Zm-QAU">
+                                <rect key="frame" x="45" y="1069" width="744" height="75"/>
+                                <color key="backgroundColor" red="0.85882352941176465" green="0.67450980392156867" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="ogM-IF-7Dr">
                                         <variation key="heightClass=regular-widthClass=compact" constant="60"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="시작하기">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="r3B-2B-SO2" kind="presentation" modalPresentationStyle="fullScreen" id="Zaw-zi-4TB"/>
+                                    <segue destination="r3B-2B-SO2" kind="presentation" modalPresentationStyle="fullScreen" id="Sl9-Ns-WnX"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MsK-sg-qsX">
-                                <rect key="frame" x="292" y="530" width="250" height="132.5"/>
-                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="IAt-EG-hgU">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="170"/>
-                                    </constraint>
-                                    <constraint firstAttribute="width" secondItem="MsK-sg-qsX" secondAttribute="height" multiplier="80:43" id="mQX-5p-yct"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공부가 제일 쉬웠어요" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM5-SP-rQ7">
-                                <rect key="frame" x="50" y="704" width="734" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.26274511220000002" green="0.36470589040000001" blue="0.50980395079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zwL-YI-r12" secondAttribute="bottom" constant="50" id="1GH-tL-AMf">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="llt-Pm-0jw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="6GA-oP-Efp"/>
-                            <constraint firstItem="llt-Pm-0jw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-300" id="8u6-6J-I3Q">
-                                <variation key="heightClass=regular-widthClass=compact" constant="-150"/>
-                            </constraint>
-                            <constraint firstItem="llt-Pm-0jw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Or1-cs-9Xz"/>
-                            <constraint firstItem="zM5-SP-rQ7" firstAttribute="top" secondItem="MsK-sg-qsX" secondAttribute="bottom" constant="40" id="UAz-Ht-9IT"/>
-                            <constraint firstItem="zM5-SP-rQ7" firstAttribute="leading" secondItem="llt-Pm-0jw" secondAttribute="leading" id="f5c-LV-Ccb"/>
-                            <constraint firstItem="MsK-sg-qsX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fYV-AJ-vAl"/>
-                            <constraint firstItem="zwL-YI-r12" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hDI-Lz-cCl"/>
-                            <constraint firstItem="zM5-SP-rQ7" firstAttribute="trailing" secondItem="llt-Pm-0jw" secondAttribute="trailing" id="lhN-lM-EKu"/>
-                            <constraint firstItem="zwL-YI-r12" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r8y-QL-Xy5"/>
-                            <constraint firstItem="MsK-sg-qsX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ull-Ey-9gK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9iY-Zm-QAU" secondAttribute="bottom" constant="30" id="0r0-Bm-fT5"/>
+                            <constraint firstItem="l7M-dt-Wxv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-30" id="JXE-os-WBx"/>
+                            <constraint firstItem="l7M-dt-Wxv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="XK8-ZW-gsV"/>
+                            <constraint firstItem="9iY-Zm-QAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Xqc-KW-sBw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9iY-Zm-QAU" secondAttribute="trailing" constant="45" id="vIN-CJ-KJj"/>
+                            <constraint firstItem="l7M-dt-Wxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="x5C-ym-E2F"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="startButton" destination="zwL-YI-r12" id="0bf-xX-vbK"/>
+                        <outlet property="backgroundImageView" destination="l7M-dt-Wxv" id="0M7-bT-RvQ"/>
+                        <outlet property="startButton" destination="9iY-Zm-QAU" id="c3C-bG-LHn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -230,7 +157,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                         <attributes>
                                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" size="30" name="AppleSDGothicNeo-Medium"/>
@@ -494,7 +421,7 @@
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="crown" catalog="system" width="128" height="92"/>
+        <image name="backgroundimage" width="1080" height="1365"/>
         <image name="dummy1" width="2000" height="2000"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
     </resources>
