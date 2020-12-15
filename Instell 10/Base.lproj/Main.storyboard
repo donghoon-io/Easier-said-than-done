@@ -24,7 +24,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iY-Zm-QAU">
                                 <rect key="frame" x="45" y="1069" width="744" height="75"/>
-                                <color key="backgroundColor" red="0.85882352941176465" green="0.67450980392156867" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="ogM-IF-7Dr">
                                         <variation key="heightClass=regular-widthClass=compact" constant="60"/>
